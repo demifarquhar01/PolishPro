@@ -43,7 +43,7 @@ Person(customer, "Customer", "Books nail care services.")
 Person(admin, "Admin", "Manages service and appointments.")
 
 Container_Boundary(salonSys, "Nail Salon System") {
-    Container(webApp, "Single Web App", "React", "User interface for booking and managing services.")
+    Container(webApp, "Single Page Application (SPA)", "React", "User interface for booking and managing services.")
     Container(api, "API", "Node.js", "Handles business logic and API requests.")
     ContainerDb(database, "Database", "MySQL", "Stores user data, appointments, and service details.")
     Container_Ext(emailService, "Email Service", "Sends booking confirmations and updates.")
@@ -81,7 +81,7 @@ Container_Boundary(api, "API Application") {
     Component(bookingHandler, "Booking Handler", "Node.js Module", "Manages bookings, reschedules, and cancellations.")
     Component(notificationSender, "Notification Sender", "Node.js Module", "Sends booking confirmations and reminders.")
     Component(dbAccessManager, "Database Access Manager", "Node.js Module", "Performs CRUD operations with MySQL database.")
-    Component_Ext(webApp, "Single Web Application", "React", "Interface for booking and managing services.")
+    Component_Ext(webApp, "Single Page Application (SPA)", "React", "Interface for booking and managing services.")
 
     Rel(bookingHandler, dbAccessManager, "CRUD operations", "JDBC")
     Rel(bookingHandler, notificationSender, "Triggers notifications")
