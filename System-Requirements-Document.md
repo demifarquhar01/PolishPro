@@ -1,6 +1,6 @@
 # PolishPro System Requirements Document ✨
 
-## Functional Requirements:
+## Functional Requirements for PolishPro System:
 
 ---
 
@@ -132,7 +132,7 @@ The PolishPro system shall store and display client preferences (e.g., favourite
 - Preferences shall be visible on the appointment details page before and during the appointment.
 
 ---
-# Non-Functional Requirements for PolishPro System
+# Non-Functional Requirements for PolishPro System:
 
 ## Usability 🖥️
 
@@ -254,7 +254,7 @@ The PolishPro system shall ensure that critical features are free from bugs, esp
   - Issues preventing users from completing key actions (e.g., booking appointments, resetting passwords).
   - Security vulnerabilities (e.g., SQL injection, data breaches).
 - The system shall maintain 95% defect-free deployments, with no more than 3 unresolved issues for over 2 weeks.
-- High-priority bugs (e.g., those affecting core functionalities like booking, authentication, or payment) shall be fixed within 48 hours.
+- High-priority bugs (e.g., those affecting core functionalities like booking appointments) shall be fixed within 48 hours.
 - Critical failures (e.g., server crashes, data loss, security vulnerabilities) must be addressed within 24 hours.
 ---
 
