@@ -1,6 +1,6 @@
 # PolishPro System Requirements Document ✨
 
-## Functional Requirements
+## Functional Requirements:
 
 ---
 
@@ -14,7 +14,7 @@ The PolishPro system should allow users to register an account, which will be us
 
 ---
 ### 2. User Role Management 👥
-The system should manage different user roles such as Salon Owner/Manager, Nail Technicians, and Clients, ensuring each user has the appropriate level of access to the system's features.
+The PolishPro system should manage different user roles such as Salon Owner/Manager, Nail Technicians, and Clients, ensuring each user has the appropriate level of access to the system's features.
 **Acceptance Criteria:**
 - **Salon Owner/Manager** can manage services, users, and view detailed reports.
 - **Nail Technicians** can manage their own schedules and view client preferences but cannot modify services or manage other technicians.
@@ -27,7 +27,7 @@ The PolishPro system shall allow users to reset their password if they forget it
 **Acceptance Criteria:**
 - Users must be able to initiate a password reset by entering their registered email address.
 - The system shall send a password reset link to the user’s email within 2 minutes.
-- Users must be able to reset their password by following the link and providing a new password that meets the system’s security requirements.
+- Users must be able to reset their password by following the link and providing a new password that meets the paasword policy.
 
 ---
 
@@ -53,7 +53,7 @@ The PolishPro system shall automatically log out users after 10 minutes of inact
 
 ### 6. **Service Display 💅**
 
-The system shall display a list of available services on a dedicated page, including the service name, detailed description, price, and the assigned nail technicians.
+The PolishPo system shall display a list of available services on a dedicated page, including the service name, detailed description, price, and the assigned nail technicians.
 
 **Acceptance Criteria:**
 - The list updates in real-time when services are added or modified.
@@ -62,7 +62,7 @@ The system shall display a list of available services on a dedicated page, inclu
 
 ### 7. **Service Management 💼**
 
-The system shall allow the admin user to modify the list of services and their details, including the service name, description, price, duration, and the assigned nail technicians.
+The PolishPro system shall allow the admin user to modify the list of services and their details, including the service name, description, price, duration, and the assigned nail technicians.
 
 **Acceptance Criteria:**
 - Admin users can modify the service name, description, price, duration, and technicians.
@@ -72,7 +72,7 @@ The system shall allow the admin user to modify the list of services and their d
 
 ### 8. **Appointment Booking 📅**
 
-The system shall allow users to book an appointment by selecting a service, nail technician, date, and time, displaying only available technicians at the chosen time.
+The PolishPro system shall allow users to book an appointment by selecting a service, nail technician, date, and time, displaying only available technicians at the chosen time.
 
 **Acceptance Criteria:**
 - Users can view available services.
@@ -80,7 +80,7 @@ The system shall allow users to book an appointment by selecting a service, nail
 - Date and time options are based on real-time availability.
 - Availability is updated dynamically to prevent double bookings.
 
-The system should also allow clients to cancel or reschedule appointments within a specified time frame.
+The PolishPro system should also allow clients to cancel or reschedule appointments within a specified time frame.
 
 **Acceptance Criteria:**
 - Clients can cancel or reschedule appointments at least 24 hours in advance.
@@ -90,7 +90,7 @@ The system should also allow clients to cancel or reschedule appointments within
 
 ### 9. **Booking Confirmation ✅**
 
-The system shall display a confirmation pop-up summarizing the selected service, nail technician, date, and time once the user completes their booking.
+The PolishPro system shall display a confirmation pop-up summarizing the selected service, nail technician, date, and time once the user completes their booking.
 
 **Acceptance Criteria:**
 - After selecting the service, nail technician, date, and time, a pop-up shall display the full booking details.
@@ -101,7 +101,7 @@ The system shall display a confirmation pop-up summarizing the selected service,
 
 ### 10. **Email Notifications 📧**
 
-The system shall send email notifications for various events to keep users informed about the status of their appointments. This includes both successful notifications and failure notifications.
+The PolishPro system shall send email notifications for various events to keep users informed about the status of their appointments. This includes both successful notifications and failure notifications.
 
 **Acceptance Criteria:**
 - **Success Notifications**: Users shall receive a confirmation email immediately after successfully booking an appointment, including service details, nail technician, date, and time.
@@ -112,7 +112,7 @@ The system shall send email notifications for various events to keep users infor
 
 ### 11. **Client Management 📋**
 
-The system shall allow nail technicians to view, manage, and update their schedules in real-time, ensuring they can efficiently prepare for upcoming appointments.
+The PolishPro system shall allow nail technicians to view, manage, and update their schedules in real-time, ensuring they can efficiently prepare for upcoming appointments.
 
 **Acceptance Criteria:**
 - Nail technicians shall have access to a calendar or schedule view displaying all upcoming appointments, including client details, service type, date, and time.
@@ -122,19 +122,9 @@ The system shall allow nail technicians to view, manage, and update their schedu
 - The system shall offer both daily and weekly schedule views, ensuring visibility into appointments and client preferences.
 
 ---
+### 12. **Client Preferences 🖤**
 
-### 12. **Activity Logs 📜**
-
-The system shall log all user activity, including changes to appointments and client information, for security and auditing purposes.
-
-**Acceptance Criteria:**
-- Logs must be accessible by the IT administrator and include timestamps and details of the action taken.
-
----
-
-### 13. **Client Preferences 🖤**
-
-The system shall store and display client preferences (e.g., favourite nail colours, styles, special instructions) for technicians to access.
+The PolishPro system shall store and display client preferences (e.g., favourite nail colours, styles, special instructions) for technicians to access.
 
 **Acceptance Criteria:**
 - When a returning client books an appointment, their previously saved preferences shall be automatically displayed.
@@ -147,30 +137,30 @@ The system shall store and display client preferences (e.g., favourite nail colo
 ## Usability 🖥️
 
 ### Accessibility ♿
-- **Requirement**: The system shall comply with WCAG 2.1 standards for accessibility.
+- **Requirement**: The PolishPro system shall comply with WCAG 2.1 standards for accessibility.
 - **Acceptance Criteria**:
   - Fully navigable using keyboard shortcuts.
   - Compatible with screen readers across all major pages.
 
 ### Responsive Design 📱
-- **Requirement**: The system shall adapt to desktops, tablets, and mobile devices for optimal usability.
+- **Requirement**: The PolishPro system shall adapt to desktops, tablets, and mobile devices for optimal usability.
 - **Acceptance Criteria**:
   - Layout must adjust for different screen sizes, ensuring buttons, text, and forms are legible on all devices.
 
 ### Cross-Platform Deployment 🌐
-- **Requirement**: The system shall be deployable on Windows, Linux, and iOS-based devices (if applicable).
+- **Requirement**: The PolishPro system shall be deployable on Windows, Linux, and iOS-based devices (if applicable).
 - **Acceptance Criteria**:
   - Fully compatible with these operating systems without any platform-specific issues.
   - Clear documentation and easy deployment across platforms.
 
 ### User Interface 🎨
-- **Requirement**: The system shall provide an intuitive, user-friendly interface.
+- **Requirement**: The PolishPro system shall provide an intuitive, user-friendly interface.
 - **Acceptance Criteria**:
   - Simple, intuitive navigation with minimal steps to book appointments.
   - Consistent design with readable fonts, high-contrast elements, and visual feedback (e.g., hover effects, loading indicators).
 
 ### Language Support 🌍
-- **Requirement**: The system shall only support English for user interaction.
+- **Requirement**: The Polish system shall only support English for user interaction.
 - **Acceptance Criteria**:
   - All content, labels, messages, and interfaces will be in English.
 
@@ -179,12 +169,12 @@ The system shall store and display client preferences (e.g., favourite nail colo
 ## Maintainability 🔧
 
 ### Modular Design 🛠️
-- **Requirement**: The system shall use modular components for easier maintenance.
+- **Requirement**: The PolishPro system shall use modular components for easier maintenance.
 - **Acceptance Criteria**:
   - Code is structured into reusable modules, each with clear documentation.
 
 ### API Documentation 📑
-- **Requirement**: The system shall include detailed API documentation for future integrations.
+- **Requirement**: The PolishPro system shall include detailed API documentation for future integrations.
 - **Acceptance Criteria**:
   - API endpoints are well-documented, with examples and response formats.
 
@@ -193,12 +183,12 @@ The system shall store and display client preferences (e.g., favourite nail colo
 ## Scalability 📈
 
 ### Concurrent Users 👥
-- **Requirement**: The system shall support up to 1,000 concurrent users during peak usage.
+- **Requirement**: The PolishPro system shall support up to 1,500 concurrent users during peak usage.
 - **Acceptance Criteria**:
-  - Load testing must confirm the system can handle 1,000 users without performance issues.
+  - Load testing must confirm the system can handle 1,500 users without performance issues.
 
 ### Horizontal Scalability ↔️
-- **Requirement**: The system shall be able to scale horizontally to accommodate future growth.
+- **Requirement**: The PolishPro system shall be able to scale horizontally to accommodate future growth.
 - **Acceptance Criteria**:
   - Architecture supports adding more servers or database instances as needed.
 
@@ -211,13 +201,8 @@ The system shall store and display client preferences (e.g., favourite nail colo
 - **Acceptance Criteria**:
   - Sensitive data, including passwords and client details, must be securely encrypted and transmitted via HTTPS.
 
-### Role-Based Access Control 🛡️
-- **Requirement**: The system shall implement role-based access control.
-- **Acceptance Criteria**:
-  - Admin users can access all system features; clients only access their personal information and appointments.
-
 ### User Activity Logs 📊
-- **Requirement**: The system shall log all user activities for security and auditing.
+- **Requirement**: The PolishPro system shall log all user activities for security and auditing.
 - **Acceptance Criteria**:
   - Logs will include timestamps, user IDs, actions, and will be accessible only to authorized personnel.
 
@@ -226,43 +211,43 @@ The system shall store and display client preferences (e.g., favourite nail colo
 ## Performance ⚡
 
 ### Fast Booking and Interactions ⏱️
-- **Requirement**: The system shall process booking, cancellations, and modifications in ≤2 seconds.
+- **Requirement**: The PolishPro system shall process booking, cancellations, and modifications in ≤2 seconds.
 - **Acceptance Criteria**:
   - Actions like booking an appointment should be completed within 2 seconds.
 
 ### Search and Response Times 🔍
-- **Requirement**: The system shall return search results for services and bookings in ≤3 seconds.
+- **Requirement**: The PolishPro system shall return search results for services and bookings in ≤3 seconds.
 - **Acceptance Criteria**:
   - Searching for services or client appointments should take no more than 3 seconds.
 
 ### Server Resource Optimization ⚙️
-- **Requirement**: The system shall efficiently use server resources, ensuring smooth operation during peak usage.
+- **Requirement**: The PolishPro system shall efficiently use server resources, ensuring smooth operation during peak usage.
 - **Acceptance Criteria**:
-  - The system can handle 1,000 concurrent users without noticeable performance degradation.
+  - The system can handle 1,500 concurrent users without noticeable performance degradation.
 
 ---
 
 ## Availability 🌐
 
 ### System Uptime 📈
-- **Requirement**: The system shall maintain a minimum uptime of 99.9%.
+- **Requirement**: The PolishPro system shall maintain a minimum uptime of 99.9%.
 - **Acceptance Criteria**:
   - The system must remain operational with minimal downtime.
 
 ### Data Backups and Recovery 💾
-- **Requirement**: The system shall implement automated backup procedures.
+- **Requirement**: The PolishPro system shall implement automated backup procedures.
 - **Acceptance Criteria**:
   - Daily backups and disaster recovery processes that restore data within 24 hours in case of failure.
 
 ### Front-End and Back-End Integration 🔄
-- **Requirement**: The system shall ensure seamless integration between front-end, back-end, and third-party services (e.g., email notifications).
+- **Requirement**: The PolishPro system shall ensure seamless integration between front-end, back-end, and third-party services (e.g., email notifications).
 - **Acceptance Criteria**:
   - All front-end requests must be processed by the back-end and responded to within 2 seconds, with accurate email notifications.
 
 ---
 ### **Bug-Free Functionality 🐞**
 
-The system shall ensure that critical features are free from bugs, especially those that affect user functionality or security. The focus will be on delivering a high-quality product with minimal defects.
+The PolishPro system shall ensure that critical features are free from bugs, especially those that affect user functionality or security. The focus will be on delivering a high-quality product with minimal defects.
 
 **Acceptance Criteria:**
 - **Critical Bugs**: Critical bugs refer to those that directly impact user functionality, security, or the system's core processes. For example:
@@ -276,12 +261,12 @@ The system shall ensure that critical features are free from bugs, especially th
 ## Continuous Deployment and Updates 🔄
 
 ### Automated Updates 📦
-- **Requirement**: The system shall support regular automated updates and deployments.
+- **Requirement**: The PolishPro system shall support regular automated updates and deployments.
 - **Acceptance Criteria**:
   - Updates every 2 weeks with minimal downtime (≤30 minutes) via CI/CD pipelines.
 
 ### Clear Communication 📬
-- **Requirement**: The system shall have well-documented requirements and clear communication with stakeholders.
+- **Requirement**: The PolishPro system shall have well-documented requirements and clear communication with stakeholders.
 - **Acceptance Criteria**:
   - All requirements must be defined at the beginning of each sprint, with no major changes during development unless critical.
 ---
