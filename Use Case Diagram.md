@@ -1,4 +1,5 @@
 ## PolishPro: Use Case Diagram
+ ![image_alt](https://github.com/demifarquhar01/PolishPro/blob/f0b5683fbcaa0dff583fc59b8d42ce44a9055a39/usecase.drawio%20(2).png)
 
 ## Key Actor And Their Roles 
 1. **Client:** A user who registers for an account, views services, books appointments, reschedules/cancels appointments, and receives email notifications about appointments.
