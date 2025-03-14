@@ -1,4 +1,80 @@
 ## PolishPro: Use Case Diagram
+
+## Use Case as an image in marmaid js:
+
+ ```mermaid
+%%{init: {'theme': 'default'}}%%
+graph LR
+
+%% System Boundary
+subgraph "📌 PolishPro: Booking Nail System"
+  
+  %% Authentication Section
+  RegisterAccount["📝 Register Account"]
+  Login["🔑 Login"]
+  ResetPassword["🔄 Reset Password"]
+  ValidateAuth["✔️ Validates User Authentication"]
+
+  %% Booking Section
+  UpdateSchedule["📅 Update Personal Schedule"]
+  ViewServices["👀 View Services"]
+  ViewAppointments["📄 View Assigned Appointments"]
+  BookAppointment["📆 Book Appointment"]
+  CancelAppointment["❌ Cancel/Reschedule Appointment"]
+
+  %% Management Section
+  ModifyServices["⚙️ Modify Display of Services"]
+  ManageTimeSlots["⏳ Manage Time Slots and Days"]
+  HandleEmailFailures["📨 Handle Email Failures"]
+
+  %% Notifications Section
+  EmailNotifications["📩 Email Notification and Reminders"]
+  ConfirmAppointment["✅ Appointment Confirmation Message"]
+  CheckClientPreferences["📌 Check Client Preferences"]
+
+end 
+
+%% Actors
+Client(["👤 Client"]) 
+SalonOwner(["👤 Salon Owner/Manager"]) 
+ITAdmin(["👤 IT Administrator"]) 
+AuthService(["🔒 Authentication Service"])
+EmailService(["📧 Email Service"])
+NailTech(["💅 Nail Technician"])
+
+%% Relationships
+Client -->RegisterAccount
+Client -->Login
+Client -->ViewServices
+Client -->BookAppointment
+Client -->CancelAppointment
+
+SalonOwner -->ModifyServices
+SalonOwner --> ManageTimeSlots
+
+ITAdmin -->HandleEmailFailures
+
+AuthService -->|Handles| ValidateAuth
+
+EmailService -->|Sends| EmailNotifications
+
+NailTech-->Login
+NailTech -->CheckClientPreferences
+NailTech-->ViewAppointments
+NailTech--> UpdateSchedule
+
+%% Workaround for UML "Includes" and "Extends"
+RegisterAccount -.->|Includes| ValidateAuth
+Login-.->|Includes| ValidateAuth
+Login -.->|Extends| ResetPassword
+BookAppointment -.->|Includes| ConfirmAppointment
+BookAppointment -.->|Includes| EmailNotifications
+CancelAppointment -.->|Includes| EmailNotifications
+BookAppointment -.->|Includes| CheckClientPreferences
+```
+ 
+ 
+ ## Use Case Diagram:
  ![image_alt](https://github.com/demifarquhar01/PolishPro/blob/f0b5683fbcaa0dff583fc59b8d42ce44a9055a39/usecase.drawio%20(2).png)
 
 ## Key Actor And Their Roles 
