@@ -2,12 +2,12 @@
  ![image_alt](https://github.com/demifarquhar01/PolishPro/blob/f0b5683fbcaa0dff583fc59b8d42ce44a9055a39/usecase.drawio%20(2).png)
 
 ## Key Actor And Their Roles 
-1. **Client:** A user who registers for an account, views services, books appointments, reschedules/cancels appointments, and receives email notifications about appointments.
-2. **Nail Technician:** Manages their personal schedule, views assigned appointments, and checks client preferences for a personalized experience.
-3. **Salon Owner/ Manager:** Manages the salon’s service offerings, modifies available services, and schedules time slots for appointments.
-4. **User Authentication System:** Validates user credentials for login and handles password reset requests.
-5. **Email Notification System:** Sends appointment confirmations and reminders to clients.
-6. **IT Administrator:** Manages and troubleshoots email failures.
+1. **Client 🧑 :** A user who registers for an account, views services, books appointments, reschedules/cancels appointments, and receives email notifications about appointments.
+2. **Nail Technician 💅:** Manages their personal schedule, views assigned appointments, and checks client preferences for a personalized experience.
+3. **Salon Owner/ Manager 👩‍💼:** Manages the salon’s service offerings, modifies available services, and schedules time slots for appointments.
+4. **User Authentication Service🔒:** Validates user credentials for login and handles password reset requests.
+5. **Email Notification Service📧:** Sends appointment confirmations and reminders to clients.
+6. **IT Administrator 👨‍💻:** Manages and troubleshoots email failures.
 
 ## Relationships Between Actors and Use Cases
 - The Client actor can register an account with Register Account use case, which includes user authentication validation use case to ensure secure access and accurate client information.
