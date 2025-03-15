@@ -47,10 +47,6 @@
 ### Alternative Flows:
 - If email fails to send, system retries and logs failure.
 - If password does not meet security criteria, prompt for a stronger password.
-
-### Relationships:
-- **Extends:** Login
-
 ---
 
 ## 4. Use Case: Validate User Authentication
@@ -68,8 +64,6 @@
 - If input data is invalid (e.g., incorrect password, already registered email), system prompts for correction.
 - If authentication fails multiple times, system may temporarily lock the account.
 
-### Relationships:
-- **Included by:** Login, Register
 
 ---
 
