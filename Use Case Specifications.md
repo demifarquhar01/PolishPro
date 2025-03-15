@@ -117,16 +117,19 @@
 
 ## 8. Use Case: Cancel/Reschedule Appointment
 **Actor:** Client  
-**Precondition:** Client is logged in and has an existing appointment.  
+**Precondition:** The client is logged in, has an existing appointment, and the appointment is more than 48 hours away.
 **Postcondition:** Appointment is canceled or rescheduled.  
 
 ### Basic Flow:
-1. Client views booked appointments.
+1. Client views their booked appointments.
 2. Client selects an appointment.
 3. Client selects either "Cancel" or "Reschedule."
-4. If rescheduling, client selects a new date and time.
-5. System updates the appointment.
-6. System sends an email confirmation.
+4. System checks if the appointment is within 24 hours away:
+- If yes, proceed to Step 5.
+- If no, display an error message preventing changes.
+5. If rescheduling, client selects a new date and time.
+6. System updates the appointment.
+7. System sends an email confirmation of the change.
 
 ### Alternative Flows:
 - If the time slot is unavailable, suggest alternatives.
