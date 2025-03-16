@@ -378,15 +378,27 @@ BookAppointment -.->|Includes| CheckClientPreferences
 - **Data Backup & Recovery Test:** Triggers a **full system backup** and simulates data loss to confirm recovery within **24 hours**.  
 
 ---
-
 # 🚀 Challenges in Translating Requirements to Use Cases & Test Cases  
 
-Developing **use cases and test cases** for the **PolishPro Nail Salon Booking System** presented several challenges in ensuring system functionality aligned with real-world business operations. While functional requirements outlined **appointment booking, cancellations, and rescheduling**, translating them into **detailed use cases and test cases** exposed gaps that required refinement.
+Developing **use cases and test cases** for the **PolishPro Nail Salon Booking System** presented several challenges in ensuring system functionality aligned with real-world business operations. While functional requirements outlined **appointment booking, cancellations, and rescheduling**, translating them into **detailed use cases and test cases** exposed gaps that required refinement.  
+
 ## ⚡ Key Challenges  
-### 📌 Defining Functional Boundaries  
-- The initial requirements broadly mentioned **cancellations and rescheduling** under appointment booking but did not define them as **standalone features**.
-- When creating test cases, this led to **unclear validation criteria**, making it difficult to test edge cases like last-minute cancellations.
-- To address this, **cancellation and rescheduling** were explicitly documented as functional requirements, ensuring the test cases reflected business needs.  
+### 🔍 Identifying Use Cases  
+One of the biggest challenges in developing **PolishPro: Nail Salon Booking System** was ensuring that all stakeholders had clearly defined roles and responsibilities. The system serves multiple users, each with distinct needs, requiring carefully designed use cases to avoid overlap and confusion.  
+Each stakeholder interacts with the system differently. A major challenge was ensuring **no redundancy or conflicts** while maintaining an intuitive user experience. For example:  
+- **🏢 Salon Owners** and **💅 Nail Technicians** both need access to client appointments, but their access levels must differ.  
+
+### 🔗 Identifying Dependencies and Includes  
+Defining dependencies between different use cases was another hurdle. Some functionalities needed to be included in multiple processes, while others extended existing actions. For instance:  
+- **📝 Registering an account** includes validating authentication.  
+- **📆 Booking an appointment** includes sending email notifications and checking client preferences.  
+- **❌ Canceling an appointment** includes sending confirmation emails.  
+
+### 🤔 Reflection: The Difficulty of Defining Use Cases  
+Defining clear use cases was more complex than anticipated. One of the primary difficulties was ensuring that each use case accurately reflected real-world interactions while avoiding redundancy. Some actions, such as **🔒 authentication and 📩 email notifications**, are integral to multiple processes, making it challenging to decide whether they should be treated as standalone use cases or dependencies within other use cases.  
+
+Another challenge was balancing **⚖️ user needs with system constraints**. For instance, while **👤 Clients** and **💅 Nail Technicians** both interact with appointment data, their permissions must be carefully defined to prevent unauthorized modifications. Similarly, ensuring that the **🏢 Salon Owner** had appropriate managerial controls without unnecessary technical complexity required careful mapping of functionalities.  
+
 
 ### 📅 Managing Scheduling Constraints  
 - Initially, test cases allowed **unrestricted cancellations and reschedules**, which could disrupt salon operations.
@@ -394,6 +406,11 @@ Developing **use cases and test cases** for the **PolishPro Nail Salon Booking S
 - The test cases were adjusted to check:  
   ✅ If cancellations within **24 hours** were blocked.  
   ✅ If the system **displayed an appropriate message** to user.  
+
+### 📌 Defining Functional Boundaries  
+- The initial requirements broadly mentioned **cancellations and rescheduling** under appointment booking but did not define them as **standalone features**.
+- When creating test cases, this led to **unclear validation criteria**, making it difficult to test edge cases like last-minute cancellations.
+- To address this, **cancellation and rescheduling** were explicitly documented as functional requirements, ensuring the test cases reflected business needs.  
 
 ### 🔔 Email Notification 
 - The **original requirements** focused primarily on **clients** cancel/reschedules appointments, but **nail technicians and salon managers** also needed visibility.  
@@ -422,6 +439,7 @@ Defining **non-functional requirements** was difficult because they often lacked
 ### 🔐 Security  
 ✅ Specifying security requirements went beyond functional access controls, requiring input from security specialists to define **penetration testing parameters** and **risk mitigation measures**.  
 ✅ Determining **acceptable risk levels** for threats like brute-force attacks and data breaches was subjective and required balancing security with usability.  
+
 ### 🛠️ Maintainability  
 ✅ Writing **clear, enforceable requirements** for code maintainability was difficult since it involved subjective factors like **code readability and modularity**.  
 ✅ Ensuring automated tests covered all critical scenarios without becoming overly complex required careful test design.  
