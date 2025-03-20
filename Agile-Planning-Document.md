@@ -108,11 +108,7 @@ These are **out of scope** for this release due to complexity, budget, or priori
 - Rating Reviews (Future enhancement)
 These would further enhance usability and customer retention but are not essential for initial deployment.
 
-## 📌 Conclusion
 This backlog ensures that **Must-have features align with PolishPro’s success metrics**, particularly **usability, reliability, and operational efficiency**. **Should-have and Could-have features** are scheduled for later phases, balancing **business value and development effort**.
-
-#### **Won’t-have: Future Considerations**  
-No features are marked as "Won’t-have" at this stage, but future iterations may include **loyalty rewards, in-app chat support, or advanced reporting** based on business needs and user feedback. These would further enhance usability and customer retention but are not essential for initial deployment.  
 
 ## Product Backlog - Non-Functional Requirements
 
@@ -154,11 +150,12 @@ These requirements are valuable but not immediately necessary. The system can fu
 - **US-009 (User Activity Logging)** – While valuable for **security auditing**, it’s not required in the MVP (Minimum Viable Product) phase. Logs can be expanded iteratively.  
 - **US-013 (CI/CD Automation)** – Automating updates improves stability, but manual deployments can suffice in early stages.  
 
-#### **Why No Could-have or Won’t-have?**  
-Every listed requirement **directly impacts
+#### **Won’t-have**  
+-Every listed requirement directly impacts.
 
 ---
-# 🚀 **Sprint 1: Core Booking Functionality**  
+
+# 🚀 **Sprint: Core Booking Functionality**  
 
 ## 🎯 **Sprint Goal Statement**  
 This sprint focuses on developing the **core booking features**, forming the foundation of the **Minimum Viable Product (MVP)**. By the end of this sprint, users should be able to:  
@@ -172,17 +169,17 @@ These essential functionalities ensure a **seamless booking experience**, settin
 
 ## 📌 **Sprint Backlog**  
 
-| Task ID  | Task Description                                | Assigned To          | Estimated Hours | Status  | Dependencies  |
-|----------|----------------------------------------------|----------------------|----------------|---------|--------------|
-| **T-001** | Develop appointment booking API              | Full Stack Developer | 8              | To Do   | Requires T-003  |
-| **T-002** | Design UI for appointment booking page       | UI/UX Designer       | 6              | To Do   | None  |
-| **T-003** | Implement database schema for bookings       | Full Stack Developer | 5              | To Do   | None  |
-| **T-004** | Develop email confirmation functionality     | Full Stack Developer | 7              | To Do   | Requires T-001 & T-003  |
-| **T-005** | Implement service listing functionality      | Full Stack Developer | 5              | To Do   | None  |
-| **T-006** | Test booking flow and fix UI issues          | Full Stack Developer | 6              | To Do   | Requires T-001 & T-002  |
-| **T-007** | Integrate API with front-end booking page    | Full Stack Developer | 6              | To Do   | Requires T-001 & T-002  |
-| **T-008** | Deploy and test email notifications in staging | Full Stack Developer | 5              | To Do   | Requires T-004  |
-| **T-009** | Conduct final sprint review                  | Full Stack Developer | 4              | To Do   | Requires all prior tasks  |
+| Task ID  | Task Description                                | Assigned To          | Estimated Hours | Status  |
+|----------|----------------------------------------------|----------------------|----------------|---------|
+| **T-001** | Develop appointment booking API              | Full Stack Developer | 8              | To Do   | 
+| **T-002** | Design UI for appointment booking page       | UI/UX Designer       | 6              | To Do   | 
+| **T-003** | Implement database schema for bookings       | Full Stack Developer | 5              | To Do   | 
+| **T-004** | Develop email confirmation functionality     | Full Stack Developer | 7              | To Do   | 
+| **T-005** | Implement service listing functionality      | Full Stack Developer | 5              | To Do   | 
+| **T-006** | Test booking flow and fix UI issues          | Full Stack Developer | 6              | To Do   | 
+| **T-007** | Integrate API with front-end booking page    | Full Stack Developer | 6              | To Do   | 
+| **T-008** | Deploy and test email notifications in staging | Full Stack Developer | 5              | To Do   | 
+| **T-009** | Conduct final sprint review                  | Full Stack Developer | 4              | To Do   |
 
 ---
 
