@@ -7,3 +7,7 @@ The Nail Salon Booking System is an online solution designed to automate the boo
 ## Links
 - [SPECIFICATION](SPECIFICATION.md)
 - [ARCHITECTURE](ARCHITECTURE.md)
+- [Stakeholder-Analysis-Table](Stakeholder-Analysis-Table.md)
+- [System-Requirements-Document](System-Requirements-Document.md)
+- [Test-And-Use-Case-Document](Test-And-Use-Case-Document.md)
+- [Agile-Planning-Document](Agile-Planning-Document.md)
