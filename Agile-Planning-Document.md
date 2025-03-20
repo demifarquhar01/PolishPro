@@ -58,19 +58,19 @@ Each user story includes an **effort estimate (1-5 story points)** and **depende
 
 | Story ID | User Story | Priority (MoSCoW) | Effort Estimate | Dependencies |
 |----------|-----------|-------------------|----------------|--------------|
-| US014 | As a **client**, I want to **register an account** so that I can **book appointments online**. | Must-have | 3 | None |
-| US015 | As a **client**, I want to **log into my account** so that I can **access my booking history and schedule new appointments**. | Must-have | 2 | US001 |
-| US016 | As a **client**, I want to **reset my password** so that I can **regain access to my account if I forget it**. | Should-have | 3 | US001 |
-| US017 | As a **client**, I want to **view available services** so that I can **choose the right treatment for my needs**. | Must-have | 2 | None |
-| US018 | As a **client**, I want to **book an appointment** so that I can **schedule a nail treatment at a convenient time**. | Must-have | 5 | US001, US004 |
-| US019 | As a **client**, I want to **receive an appointment confirmation email** so that I can **be sure my booking was successful**. | Must-have | 3 | US005 |
-| US020 | As a **client**, I want to **cancel or reschedule an appointment** so that I can **change my plans if needed**. | Must-have | 4 | US005 |
-| US021 | As a **client**, I want to **receive email reminders** so that I can **avoid missing my appointments**. | Should-have | 3 | US005, US006 |
-| US022 | As a **nail technician**, I want to **view my assigned appointments** so that I can **prepare for upcoming clients**. | Must-have | 2 | US005 |
-| US023 | As a **nail technician**, I want to **view client preferences** so that I can **personalize my service**. | Should-have | 3 | US005 |
-| US024 | As a **salon owner/manager**, I want to **manage time slots and scheduling** so that I can **ensure smooth operations**. | Must-have | 4 | US005 |
-| US025 | As a **salon owner/manager**, I want to **modify available services** so that I can **keep offerings up to date**. | Should-have | 3 | None |
-| US026 | As an **IT administrator**, I want to **manage email failures** so that I can **ensure all notifications are sent properly**. | Could-have | 2 | US006, US027 |
+| US001| As a **client**, I want to **register an account** so that I can **book appointments online**. | Must-have | 3 | None |
+| US002 | As a **client**, I want to **log into my account** so that I can **access my booking history and schedule new appointments**. | Must-have | 2 | US001 |
+| US003 | As a **client**, I want to **reset my password** so that I can **regain access to my account if I forget it**. | Should-have | 3 | US001 |
+| US004 | As a **client**, I want to **view available services** so that I can **choose the right treatment for my needs**. | Must-have | 2 | None |
+| US005| As a **client**, I want to **book an appointment** so that I can **schedule a nail treatment at a convenient time**. | Must-have | 5 | US001, US004 |
+| US006 | As a **client**, I want to **receive an appointment confirmation email** so that I can **be sure my booking was successful**. | Must-have | 3 | US005 |
+| US007 | As a **client**, I want to **cancel or reschedule an appointment** so that I can **change my plans if needed**. | Must-have | 4 | US005 |
+| US008 | As a **client**, I want to **receive email reminders** so that I can **avoid missing my appointments**. | Should-have | 3 | US005, US006 |
+| US009 | As a **nail technician**, I want to **view my assigned appointments** so that I can **prepare for upcoming clients**. | Must-have | 2 | US005 |
+| US010 | As a **nail technician**, I want to **view client preferences** so that I can **personalize my service**. | Should-have | 3 | US005 |
+| US011 | As a **salon owner/manager**, I want to **manage time slots and scheduling** so that I can **ensure smooth operations**. | Must-have | 4 | US005 |
+| US012 | As a **salon owner/manager**, I want to **modify available services** so that I can **keep offerings up to date**. | Should-have | 3 | None |
+| US013 | As an **IT administrator**, I want to **manage email failures** so that I can **ensure all notifications are sent properly**. | Could-have | 2 | US006, US008 |
 
 ## 📌 Justification for Prioritization
 
