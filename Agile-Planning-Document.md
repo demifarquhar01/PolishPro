@@ -161,7 +161,7 @@ This sprint focuses on developing the **core booking features**, forming the fou
 - **Book an appointment**  
 - **Receive a confirmation email**  
 
-These essential functionalities ensure a **seamless booking experience**, setting the stage for future enhancements like user authentication and scheduling flexibility.  
+These essential functionalities ensure a **seamless booking experience**, setting the stage for the other functionality like user authentication and scheduling flexibility.  
 
 ---
 
