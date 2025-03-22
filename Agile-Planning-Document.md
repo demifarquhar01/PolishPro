@@ -2,7 +2,7 @@
 ## 🎯 Overview  
 This document contains user stories derived from functional requirements and use cases for the **PolishPro: Nail Salon Booking System**.
 
-## 📝 User Stories  
+## 1. User Stories  
 
 | Story ID  | User Story  | Acceptance Criteria  | Priority  |
 |-----------|------------|----------------------|-----------|
@@ -43,16 +43,14 @@ This document contains user stories derived from functional requirements and use
 
 ---
 
-# 📌 PolishPro: Nail Salon Booking System - Product Backlog
+# 2. Product Backlog - PolishPro: Nail Salon Booking System
 
 ## 📋 Overview
 This **Product Backlog** is structured using the **MoSCoW prioritization** method:
 - **Must-have**: Essential features required for the system to function.
 - **Should-have**: Important but not immediately critical features.
-- **Could-have**: Nice-to-have features that enhance usability.
+- **Could-have**: Nice-to-have features.
 - **Won’t-have**: Features excluded from the current scope.
-
-Each user story includes an **effort estimate (1-5 story points)** and **dependencies** where applicable.
 
 ## 📑 Product Backlog Table
 
@@ -155,7 +153,7 @@ These requirements are valuable but not immediately necessary. The system can fu
 
 ---
 
-# 🚀 **Sprint: Core Booking Functionality**  
+# 3. **Sprint: Core Booking Functionality**  
 
 ## 🎯 **Sprint Goal Statement**  
 This sprint focuses on developing the **core booking features**, forming the foundation of the **Minimum Viable Product (MVP)**. By the end of this sprint, users should be able to:  
@@ -190,64 +188,75 @@ These essential functionalities ensure a **seamless booking experience**, settin
 ✅ **Booking functionality is fully tested, integrated, and bug-free** before moving to the next sprint.  
 
 ---
-
 ## 📌 **Sprint Adjustments for Feasibility**  
 - The **total estimated workload is 47 hours**, making it **manageable within a 2-week sprint**.  
 - **Week 1 Focus:** Database setup (T-003), API development (T-001), and UI design (T-002).  
 - **Week 2 Focus:** Email integration (T-004), testing & UI fixes (T-006), API integration (T-007), and final review (T-009).  
 
-This structured approach ensures that the **core booking process is functional, user-friendly, and ready for future enhancements.** 🚀
+This structured approach ensures that the **core booking process is functional and user-friendly.** 🚀
 
 --- 
-# 📝 Sprint Reflection: Challenges in Prioritization, Estimation, and Agile Alignment  
+# 📝 Reflection: Challenges in Prioritization, Estimation, and Agile Alignment  
 
 ## 📌 Overview  
-Developing the **PolishPro: Nail Salon Booking System** alone has been a unique experience. Without a team to provide feedback or distribute tasks, I found myself facing internal struggles in **prioritization, estimation, and aligning Agile** to my workflow. Agile thrives in team environments where collaboration helps refine requirements, but as a solo developer, I had to adjust the framework to fit my needs.  
-
-This reflection explores the biggest challenges I faced in this sprint and how I overcame them.  
+Working on the **PolishPro: Nail Salon Booking System** solo has been an insightful experience. Without a team to delegate tasks or provide feedback, I had to tackle challenges in **prioritization, estimation, and aligning Agile** with my workflow on my own.  
 
 ## 🔥 Challenges Faced  
 
-### 1️⃣ **Prioritization Struggles: What Comes First?**  
-One of the toughest challenges was **deciding what to prioritize** in the first sprint. Since the system requires multiple key features—booking management, user authentication, email notifications, and more—I found myself tempted to work on everything at once. However, that approach **contradicts Agile principles**, which emphasize delivering incremental value.  
+### 1️⃣ **Prioritization Struggles**  
+One of the biggest hurdles was balancing **business value, technical feasibility, and user expectations**. While some features, like **appointment booking**, were clearly top priority, others—such as **viewing client preferences**—required deeper consideration.  
 
-Initially, I considered starting with **user accounts** since authentication is important, but I realized that without a booking system, the application wouldn’t serve its core purpose. Ultimately, I decided to **focus Sprint 1 on core booking functionality**—allowing users to select services, schedule appointments, and receive confirmation emails.  
+At first, I thought client preferences might be a **Should-have**, but after revisiting the business needs, I realized it plays a **critical role** in improving customer satisfaction and service quality. Nail technicians need quick access to client history, preferred services, and past appointments to provide **personalized experiences**. Without this, the system wouldn't fully support its intended purpose.  
 
-- **Lesson Learned:** Prioritization isn’t just about importance; it’s about delivering **early value** to the end users. The MVP mindset helped me make this decision.  
+This made me rethink how I prioritize features—not just based on core functionality but also on **real business impact**. It reinforced the importance of validating **initial assumptions** and continuously aligning priorities with business goals.  
 
-### 2️⃣ **Time Estimation & Task Breakdown**  
-Estimating effort was another major challenge. Since I was handling both **development and testing**, I had to determine how much time each task would take. Some tasks, like setting up the database schema, seemed simple at first but became more complex when I had to optimize relationships between tables and ensure data integrity.  
 
-Another unexpected delay came from **email confirmation functionality**. I assumed it would take only a few hours, but setting up an email service, handling API errors, and formatting the email properly took much longer.  
+Additionally, different stakeholders had conflicting priorities.  
+- The **Salon Owner** wanted efficient operations (e.g., managing appointment slots).  
+- **Clients** valued ease of use (e.g., a simple booking UI).  
+- The **IT Administrator** emphasized security and system reliability.  
 
-- **Lesson Learned:** Task estimation should include **buffer time** for debugging, especially for features that involve third-party integration. I now realize that **technical tasks are rarely as straightforward as they seem** on paper.  
+Aligning these needs meant making trade-offs—some features had to be **deprioritized** for the MVP.  
 
-## 3️⃣ **Aligning Agile to a Solo Workflow**  
-Agile methodologies typically involve **team collaboration**, stand-ups, and retrospectives. Since I don’t have a project manager or a development team, I had to **adapt Agile principles to a solo workflow**.  
+**What Comes First?**  
+One major struggle was deciding **what to focus on in Sprint 1**. Since the system required multiple key features—booking management, user authentication, email notifications, and more—it was tempting to start everything at once. But that goes against **Agile principles**, which emphasize **incremental value delivery**.  
 
-- I track all my tasks using **GitHub Issues**, ensuring each sprint has a structured task breakdown.  
-- I use **GitHub Milestones** to define sprint goals and track overall progress.  
-- Instead of team stand-ups, I conduct **self-reviews** at the end of each sprint, reflecting on what went well and what needs improvement.  
+At first, I considered building **user authentication** first, but I realized that without a booking system, the app wouldn’t serve its core purpose. I ultimately decided to **focus Sprint 1 on booking functionality**, ensuring users could schedule appointments and receive confirmations.  
 
-However, without external feedback, it was easy to **overlook mistakes** or focus too much on a single aspect of the project. To counter this, I started reviewing the system **from a user’s perspective** at regular checkpoints.  
+📝 **Lesson Learned:** Prioritization isn’t just about importance—it’s about **what provides early value**.  
 
-✅ **Lesson Learned:** Solo Agile development requires **self-discipline** and a **structured review process** to ensure steady progress. I now incorporate **mini-retrospectives** to evaluate what’s working.  
+---
 
-## 4️⃣ **Managing Motivation and Focus**  
-Working alone means **there’s no external accountability**, making it challenging to stay motivated.  
+### 2️⃣ **Challenges in Estimation**  
+Estimating effort for user stories was trickier than expected.  
 
-- Some tasks, like writing documentation, felt tedious, while others, like coding, were more engaging.  
-- To stay focused, I set **clear sprint goals**, track progress using **GitHub Milestones**, and celebrate small wins after completing major features.  
+**Uncertainty in Complexity:** Some features seemed simple but had hidden complexities. For example, password reset required email validation and security measures, adding unexpected effort.  
 
-✅ **Lesson Learned:** Breaking work into **small, achievable tasks** and tracking them with **GitHub Issues and Milestones** keeps motivation high and ensures steady progress.  
+**Dependencies Between Features:** Booking an appointment depended on having available services and registered users. If one part was delayed, it affected everything else.  
 
+**Balancing Scope vs. Development Time:** Features like email reminders were valuable but weren’t essential for launch. Estimating their effort helped decide whether to **include them in Phase 1 or postpone them**.  
+
+Since I was handling both **development and testing**, I had to determine realistic timelines. Some tasks, like setting up the **database schema**, became more complex than expected due to data relationships and optimization needs.  
+
+---
+
+### 3️⃣ **Aligning Agile**  
+Agile typically involves team collaboration, stand-ups, and retrospectives. As a **solo developer**, I had to **adapt Agile to my workflow**:  
+
+- Used **GitHub Issues** to track tasks.  
+- Created **Milestones** to define sprint goals.  
+- Conducted **self-reviews** at the end of each sprint to evaluate progress.  
+
+However, without external feedback, it was easy to **overlook mistakes** or spend too much time on one area. To counter this, I started **reviewing the system from a user’s perspective** at regular checkpoints.  
+
+**Aligning Stakeholder Needs:**  
+- **Iterative Feedback:** Clients and technicians provided feedback, sometimes requiring **mid-sprint changes**. While Agile allows flexibility, **too many changes** disrupted sprint planning.  
+- **Non-Functional Requirements (NFRs):** Stakeholders focused on **features**, but **security, scalability, and performance** needed attention too. Tackling NFRs early prevented **technical debt later**.  
+
+---
 ## 🎯 **Final Thoughts**  
-Adapting Agile to a solo project required **prioritization, structured tracking, and self-review mechanisms**. While challenging, using **GitHub Issues and Milestones for sprint tracking** and **conducting personal retrospectives** has helped me stay organized and accountable. Moving forward, I plan to refine my **task estimation skills** and **improve system testing strategies** to enhance project efficiency. 🚀  
-## 🎯 Moving Forward  
-1. **Improve Estimation Accuracy** – I will compare actual vs. estimated time to refine future estimates.  
-2. **Maintain a Clear Sprint Focus** – Each sprint will have a well-defined goal to avoid distractions.  
-3. **Implement Self-Reviews** – Reviewing the system from a fresh perspective will help catch usability issues.  
+- **Trade-offs are necessary**—not everything can be delivered in the first release.  
+- **Estimations improve over time**—initial guesses may be off, but experience refines accuracy.  
+- **Prioritization should align with business impact**—delivering **early value** ensures stakeholders see results faster.  
 
-🚀**Despite these challenges, the sprint has been a valuable learning experience. Adapting Agile as a solo developer requires structure, but with continuous reflection, I can refine my approach and deliver a well-organized system.**  
-
-
+ Reflecting on this experience, I realize that **structured planning and adaptability** are essential. While challenging, this process has strengthened my ability to balance priorities, make realistic effort estimations, and integrate Agile principles into my workflow. This project will also support my professional growth by enhancing how I approach future projects. 🚀
