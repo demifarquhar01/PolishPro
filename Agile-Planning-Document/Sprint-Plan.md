@@ -1,3 +1,13 @@
+# 🚀 **Sprint: Core Booking Functionality**  
+ 
+ ## 🎯 **Sprint Goal Statement**  
+The goal of this sprint is to **implement core appointment booking functionality**, ensuring a seamless experience for clients. This includes enabling users to **view available slots**, **book appointments**, and **receive confirmation emails**. As a key part of the **MVP**, this feature ensures that the system's primary purpose—**automating appointment scheduling**—is both **functional** and **user-friendly**. By the end of this sprint, clients will be able to interact effortlessly with the booking system, reducing manual effort and enhancing overall efficiency. 🚀📅✨  
+  
+ These essential functionalities ensure a **seamless booking experience**, setting the stage for future enhancements like user authentication and scheduling flexibility.  
+
+## GitHub Project tools table
+![image](https://github.com/demifarquhar01/PolishPro/blob/c6db6a9cb9956febd955a53b6b6b72f6ff7dafa0/Agile-Planning-Document/Sprint.png)
+
 ## 📌 **Sprint Backlog**  
 
 | Task ID  | Task Description                                | Assigned To          | Estimated Hours | Status  |
