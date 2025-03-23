@@ -10,7 +10,7 @@ This document contains user stories derived from functional requirements and use
 
 --- 
 
-## Table in markdown 
+## User Stories Table 
 
 | Story ID  | User Story  | Acceptance Criteria  | Priority  |
 |-----------|------------|----------------------|-----------|
