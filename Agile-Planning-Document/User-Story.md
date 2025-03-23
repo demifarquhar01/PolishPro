@@ -2,7 +2,15 @@
 ## 🎯 Overview  
 This document contains user stories derived from functional requirements and use cases for the **PolishPro: Nail Salon Booking System**.
 
-## 1. User Stories  
+# 1. User Stories  
+
+## Github project tools for user story table
+
+![image](https://github.com/demifarquhar01/PolishPro/blob/c6db6a9cb9956febd955a53b6b6b72f6ff7dafa0/Agile-Planning-Document/user%20story.png)
+
+--- 
+
+## Table in markdown 
 
 | Story ID  | User Story  | Acceptance Criteria  | Priority  |
 |-----------|------------|----------------------|-----------|
