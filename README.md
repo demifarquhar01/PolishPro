@@ -10,4 +10,10 @@ The Nail Salon Booking System is an online solution designed to automate the boo
 - [Stakeholder-Analysis-Table](Stakeholder-Analysis-Table.md)
 - [System-Requirements-Document](System-Requirements-Document.md)
 - [Test-And-Use-Case-Document](Test-And-Use-Case-Document.md)
-- [Agile-Planning-Document](Agile-Planning-Document.md)
+
+
+## Agile Planning Document 
+- [User-Story](https://github.com/demifarquhar01/PolishPro/blob/c6db6a9cb9956febd955a53b6b6b72f6ff7dafa0/Agile-Planning-Document/User-Story.md)
+- [Product-Backlog](https://github.com/demifarquhar01/PolishPro/blob/c6db6a9cb9956febd955a53b6b6b72f6ff7dafa0/Agile-Planning-Document/Product-Backlog.md)
+- [Sprint-Plan](https://github.com/demifarquhar01/PolishPro/blob/8e0bd4938a08c4a6b8668a179c3805860262e5a9/Agile-Planning-Document/Sprint-Plan.md)
+- [Reflection6](https://github.com/demifarquhar01/PolishPro/blob/8e0bd4938a08c4a6b8668a179c3805860262e5a9/Agile-Planning-Document/Reflection6.md)
