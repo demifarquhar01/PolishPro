@@ -4,12 +4,17 @@ Nail Salon Booking System
 ## Project Description
 The Nail Salon Booking System is an online solution designed to automate the booking process for nail care services. This system will streamline appointment management, reduce operational errors, and enhance the customer experience by providing a user-friendly interface for booking, rescheduling, and canceling appointments.
 
-## Links
-- [SPECIFICATION](SPECIFICATION.md)
-- [ARCHITECTURE](ARCHITECTURE.md)
-- [Stakeholder-Analysis-Table](Stakeholder-Analysis-Table.md)
-- [System-Requirements-Document](System-Requirements-Document.md)
-- [Test-And-Use-Case-Document](Test-And-Use-Case-Document.md)
+# Links
+## Specification 
+- [SPECIFICATION](https://github.com/demifarquhar01/PolishPro/blob/f09bce30ff488a3d06ebd398bc550e2b811fc41c/Specification/SPECIFICATION.md)
+- [ARCHITECTURE](https://github.com/demifarquhar01/PolishPro/blob/f09bce30ff488a3d06ebd398bc550e2b811fc41c/Specification/ARCHITECTURE.md)
+
+## System Requirements Document 
+- [Stakeholder-Analysis-Table](https://github.com/demifarquhar01/PolishPro/blob/f09bce30ff488a3d06ebd398bc550e2b811fc41c/System-Requirements-Document/Stakeholder-Analysis-Table.md)
+- [System-Requirements-Document](https://github.com/demifarquhar01/PolishPro/blob/f09bce30ff488a3d06ebd398bc550e2b811fc41c/System-Requirements-Document/System-Requirements-Document.md)
+
+## Use Case And Test Case Document
+- [Test-And-Use-Case-Document](https://github.com/demifarquhar01/PolishPro/blob/f09bce30ff488a3d06ebd398bc550e2b811fc41c/Test-And-Use-Case-Document/Test-And-Use-Case-Document.md)
 
 
 ## Agile Planning Document 
