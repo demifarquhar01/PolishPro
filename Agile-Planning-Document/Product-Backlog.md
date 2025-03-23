@@ -7,6 +7,10 @@ This **Product Backlog** is structured using the **MoSCoW prioritization** metho
 - **Could-have**: Nice-to-have features.
 - **Won’t-have**: Features excluded from the current scope.
 
+## Github project tools of Product Backlog table 
+![image](https://github.com/demifarquhar01/PolishPro/blob/5dbb6906f7179027f8d9beede859416806419bab/Agile-Planning-Document/backlog.png)
+
+
 ## 📑 Product Backlog Table
 
 | Story ID | User Story | Priority (MoSCoW) | Effort Estimate | Dependencies |
