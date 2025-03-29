@@ -1,7 +1,11 @@
 # **Kanban Board Customization – PolishPro Nail Salon Booking System**  
 
 ## **Kanban Board Screenshot**  
-![Kanban Board Screenshot]()  
+
+**Link to the Kanban Board:**
+[GitHub Project Tools: PolishPro Sprint Planning](https://github.com/users/demifarquhar01/projects/12)
+
+![Kanban Board Screenshot](https://github.com/demifarquhar01/PolishPro/blob/0d4abfbe6a5bf0b89caaf6638bb9c0c77ab87953/sprint%20team%20plan.png)  
 
 
 ## **Why This Template Was Chosen**  
