@@ -17,8 +17,18 @@ In this task, I explored various GitHub project templates such as Basic Kanban, 
 
 ## **Chosen Template: Team Planning**
 ## **Justification:**
-- The **Team Planning** template is best suited for our Agile workflow as it supports structured task management with multiple stages (Backlog, In Progress, Review, Done), making it ideal for managing sprints and team collaboration.
-- It enables **iteration tracking**, which is essential for breaking down the **PolishPro Nail Salon Booking System** into smaller, manageable tasks for each sprint.
-- The **Backlog** column allows us to clearly prioritize tasks for future development, while the **Review** column ensures that tasks are thoroughly tested and reviewed before final completion.
-- With **team assignments** supported in this template, each team member can be directly linked to specific tasks, improving collaboration and visibility.
-- This template aligns perfectly with the Agile methodology, which we are using for the **PolishPro Booking System**, ensuring continuous improvement, iteration, and efficient sprint planning throughout the development process.
+
+The **Team Planning** template is the most appropriate choice for managing the **PolishPro Nail Salon Booking System** project due to its well-structured columns and workflows, which perfectly align with our Agile approach.
+
+- **Structured Task Management**: The template supports multiple columns such as **Backlog**, **In Progress**, **Review**, and **Done**, which helps in clearly defining the status of each task. This structure allows the team to easily track progress from the initial stages to final completion, ensuring no tasks are overlooked or forgotten. The workflow mirrors our need to track tasks from planning to execution and final review.
+
+- **Iteration Tracking**: This template is ideal for **iteration tracking**, an essential aspect of the Agile methodology. By breaking down the **PolishPro Nail Salon Booking System** into smaller, manageable tasks for each sprint, we can track progress over multiple iterations, ensuring continuous delivery and improvements. The **Backlog** column allows us to prioritize tasks for upcoming sprints, and the iterative nature of this template makes it easy to manage and allocate resources for each sprint effectively.
+
+- **Backlog and Review Columns**: The **Backlog** column plays a crucial role in the project by allowing the team to clearly prioritize tasks based on importance and urgency. It helps us to plan tasks for future sprints and ensure that the most critical features are developed first. The **Review** column is key to ensuring quality, as it allows for tasks to be thoroughly tested and reviewed before moving to the final stage. This ensures that each feature is properly tested and meets the required standards before being marked as complete.
+
+- **Team Assignments and Collaboration**: This template supports **team assignments**, allowing specific tasks to be directly linked to individual team members. This feature enhances collaboration by clearly identifying who is responsible for what tasks, helping to avoid confusion and ensuring accountability. It improves visibility for both individual tasks and team progress, which is essential for effective communication within the team.
+
+- **Agile Alignment**: The **Team Planning** template aligns perfectly with the **Agile methodology**, which we are using for the **PolishPro Nail Salon Booking System** project. Agile emphasizes continuous iteration, collaboration, and adaptability, and this template supports these principles by facilitating a structured yet flexible approach to managing the project. With built-in support for sprint tracking, team assignments, and task prioritization, this template helps ensure that we can efficiently plan, execute, and review tasks for each sprint, ensuring smooth development and timely delivery of features.
+
+Overall, the **Team Planning** template supports efficient sprint planning, task management, and iteration tracking, making it the ideal choice for our **PolishPro Nail Salon Booking System** project.
+
