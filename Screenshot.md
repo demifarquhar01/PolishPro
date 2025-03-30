@@ -27,7 +27,7 @@ To enhance our Agile workflow, the following columns were added:
   Contains tasks that are actively being worked on by team members.  
   Allows the team to track ongoing development work in real-time.
 
-- **Blocked (Custom Column)**  
+- **Blockers (Custom Column)**  
   Captures tasks that are currently blocked due to dependencies, issues, or missing requirements.  
   Ensures visibility into roadblocks so they can be resolved as quickly as possible.
 
