@@ -14,7 +14,7 @@ To keep things running smoothly, a Kanban Board also limits the number of tasks 
    - **Backlog**: Contains all created tasks that are yet to be prioritized or scheduled for a sprint.
    - **To Do**: Lists tasks that have been prioritized and are ready to be worked on.
    - **In Progress**: Contains tasks that are actively being developed.
-   - **Blocked**: Captures tasks that are unable to proceed due to dependencies, missing requirements, or other issues.
+   - **Blockers**: Captures tasks that are unable to proceed due to dependencies, missing requirements, or other issues.
    - **Testing**: Ensures that completed tasks go through proper quality assurance before progressing. This phase also ensures that quality standards are met before moving forward.
    - **Done**: Holds tasks that have successfully passed all stages and are now considered finished.
 
@@ -24,7 +24,7 @@ To keep things running smoothly, a Kanban Board also limits the number of tasks 
    A well-functioning Kanban board prevents team members from working on too many tasks simultaneously, which can slow progress and reduce efficiency. To manage this:
    
    - **WIP Limits**: We restrict the number of tasks that can be in the "In Progress" column at any given time to ensure focus and avoid overloading developers.
-   - **Blocked Column**: Tasks that cannot proceed are placed here, highlighting critical roadblocks that need immediate attention.
+   - **Blockers Column**: Tasks that cannot proceed are placed here, highlighting critical roadblocks that need immediate attention.
    - **Quality Control Stage (Testing)**: Before moving to "Done," tasks must pass through dedicated testing, ensuring quality standards are met and no defects are introduced into production.
 
    By implementing these controls, we ensure a steady workflow, reduce task switching, and enhance overall productivity.
