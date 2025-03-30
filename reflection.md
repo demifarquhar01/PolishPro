@@ -1,18 +1,18 @@
 # Reflection on Selecting and Customizing the Kanban Template
 
 ## Challenges in Choosing and Customizing the Right Template
-Picking the right **GitHub project template** for my **2-week sprint** wasn’t as simple as just clicking a button. GitHub offers several templates—**Basic Kanban, Automated Kanban, Bug Triage, and Team Planning**—and after some consideration, I went with **Team Planning**. It’s structured enough for Agile workflows and makes task management more efficient.
+Picking the right GitHub project template for my 2-week sprint wasn’t as simple as just selecting a template. GitHub offers several options—Basic Kanban, Automated Kanban, Bug Triage, and Team Planning—and after careful consideration, I decided to go with the **Team Planning** template. It's structured enough to support Agile workflows while making task management more efficient.
 
-### Customization Challenges
-The default setup was a bit too basic, with just **To Do, In Progress, and Done** columns. That wasn’t enough to reflect my development process, so I made a few key adjustments:
+## Customization Challenges
+The default setup was a bit too basic, with just To Do, In Progress, and Done columns. This setup didn’t fully reflect my development process, so I made several key adjustments:
+
 - **Backlog**: A place to store all user stories before they’re assigned to a sprint.
 - **Testing**: To verify that features are working before they move forward.
-- **Blocked**: A column to track anything preventing progress.
-- **Review**: A final checkpoint before marking tasks as "Done."
+- **Blockers**: A column to track anything preventing progress.
 
-Balancing **workflow complexity and efficiency** was a challenge. Too many stages would slow things down, but too few could lead to unfinished or low-quality work. I had to strike the right balance to keep the process structured yet smooth.
+Initially, I also added a **Review** column as a final checkpoint before marking tasks as "Done." However, I later removed it. I realized that adding this extra stage could hinder the workflow, leading to more time spent on a ticket before it was considered complete. The challenge here was striking the right balance—too many stages could slow down progress, but too few could lead to incomplete or low-quality work.
 
-Another limitation? **GitHub lacks built-in automation compared to tools like Jira**. While Jira can move tasks automatically based on conditions (e.g., transitioning an issue to "In Progress" when assigned), GitHub requires manual updates—unless I set up custom scripts. It’s a bit more hands-on but still manageable.
+Another limitation I encountered was that GitHub lacks built-in automation compared to tools like Jira. While Jira can automatically transition tasks based on conditions (e.g., moving a task to "In Progress" when assigned), GitHub requires manual updates unless custom scripts are set up. While this makes it a bit more hands-on, it's still manageable.
 
 ---
 
