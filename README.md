@@ -22,3 +22,9 @@ The Nail Salon Booking System is an online solution designed to automate the boo
 - [Product-Backlog](https://github.com/demifarquhar01/PolishPro/blob/c6db6a9cb9956febd955a53b6b6b72f6ff7dafa0/Agile-Planning-Document/Product-Backlog.md)
 - [Sprint-Plan](https://github.com/demifarquhar01/PolishPro/blob/8e0bd4938a08c4a6b8668a179c3805860262e5a9/Agile-Planning-Document/Sprint-Plan.md)
 - [Reflection6](https://github.com/demifarquhar01/PolishPro/blob/8e0bd4938a08c4a6b8668a179c3805860262e5a9/Agile-Planning-Document/Reflection6.md)
+
+## GitHub Project Templates and Kanban Board Implementation
+- [template-analysis](https://github.com/demifarquhar01/PolishPro/blob/78a53ee88a1d269d6e23d339ed2cc5275fc8f36e/GitHub-Kanban-Board-Document/template-analysis.md)
+- [kanban-explanation](https://github.com/demifarquhar01/PolishPro/blob/78a53ee88a1d269d6e23d339ed2cc5275fc8f36e/GitHub-Kanban-Board-Document/kanban-explanation.md)
+- [Screenshot](https://github.com/demifarquhar01/PolishPro/blob/78a53ee88a1d269d6e23d339ed2cc5275fc8f36e/GitHub-Kanban-Board-Document/Screenshot.md)
+- [reflection](https://github.com/demifarquhar01/PolishPro/blob/78a53ee88a1d269d6e23d339ed2cc5275fc8f36e/GitHub-Kanban-Board-Document/reflection.md)
