@@ -139,26 +139,37 @@ flowchart TD
 ---
 
 ## 5. Client Management by Nail Technicians
+
 ```mermaid
 flowchart TD
-    Start([Start]) --> A[Technician views schedule]
+    Start([Start]) --> A[View schedule]
     A --> B[View upcoming appointments with client details]
-    B --> C[Check if appointment needs change]
-    C -- Yes --> D[Reschedule with client approval]
-    C -- No --> E[Proceed with appointment]
-    D --> F[Send confirmation email]
-    E --> G[Access client preferences]
-    G --> End([End])
+    B --> C{Appointment needs to change?}
+    C -->|Yes| D[Modify/reschedule appointment]
+    D --> E[Request client approval]
+    E --> F{Client approved?}
+    F -->|Yes| G[Update appointment in system]
+    F -->|No| H[Keep original schedule]
+    G --> I[Send confirmation and alert]
+    H --> I
+    C -->|No| J[Continue preparing for appointments]
+    I --> J
+    J --> K{Schedule update needed?}
+    K -->|Yes| L[Technician updates schedule]
+    L --> M[System reflects updated schedule in real-time]
+    K -->|No| M
+    M --> End([End])
 
     classDef user fill:#FFEEEE,stroke:#D33,stroke-width:2px;
     classDef system fill:#EEFFEE,stroke:#3D3,stroke-width:2px;
 
-    class A,B,C,D,E,F,G user;
+    class A,B,C,D,E,F,G,H,J,K,L user;
+    class I,M system;
 ```
 ## 📝 Explanation
-- **Covers:** Real-time schedule view, alerts for changes, ability to reschedule with client approval, and access to preferences.
-- **Stakeholder Concern:** Nail technicians can efficiently manage their appointments, update schedules with client approval, and access client preferences for improved service delivery.
-- **System Logic:** The system provides a schedule view, allows for rescheduling with client approval, and displays client preferences for the technician.
+- **Covers:** The system enables technicians to view appointments with client details, reschedule with client approval, receive alerts and confirmations for changes, update their availability or shifts, and see all updates reflected in real-time.
+- **Stakeholder Concern:** Nail technicians can efficiently view and manage their upcoming appointments, reschedule bookings with client approval, and make updates to their availability. The system supports daily and weekly views and sends alerts if any appointment is changed or canceled.
+- **System Logic:** Displays real-time schedules, allows rescheduling with client approval, updates technician availability, and sends alerts for any changes.
 
 ---
 ## 6. Service Management by Salon Owner/Admin
