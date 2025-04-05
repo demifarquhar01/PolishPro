@@ -41,13 +41,12 @@ The PolishPro system shall enforce strong password policies during registration,
 
 ---
 
-### 5. **Inactivity Logout ⏰**
-
-The PolishPro system shall automatically log out users after 10 minutes of inactivity.
+### 5. Appointment Rescheduling & Cancellation
+The PolishPro system should also allow clients to cancel or reschedule appointments within a specified time frame.
 
 **Acceptance Criteria:**
-- The system shall display a warning message 1 minute before logging out.
-- If there is no further interaction, the system shall log the user out.
+- Clients can cancel or reschedule appointments at least 24 hours in advance.
+- The system sends a confirmation email upon successful cancellation or rescheduling.
 
 ---
 
@@ -79,12 +78,6 @@ The PolishPro system shall allow users to book an appointment by selecting a ser
 - The system displays available nail technicians for the selected service.
 - Date and time options are based on real-time availability.
 - Availability is updated dynamically to prevent double bookings.
-
-The PolishPro system should also allow clients to cancel or reschedule appointments within a specified time frame.
-
-**Acceptance Criteria:**
-- Clients can cancel or reschedule appointments at least 24 hours in advance.
-- The system sends a confirmation email upon successful cancellation or rescheduling.
 
 ---
 
