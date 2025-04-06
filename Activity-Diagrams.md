@@ -207,3 +207,7 @@ flowchart TD
     class A,C user;
     class B,D system;
 ```
+---
+
+## Explanation of diagrams 
+- [Explanations](https://github.com/demifarquhar01/PolishPro/blob/2e9b097dca5eecf7b775e149e64a8ffc1fad5724/Explanations.md)
