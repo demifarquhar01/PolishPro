@@ -49,10 +49,6 @@ flowchart TD
     class A,F,C,H,I,J,K,L,M,O,S user;
     class B,D,E,G,Q system;
 ```
-## 📝 Explanation
-- **Covers:** Account creation, strong password enforcement, email verification, login attempts, and password reset via email.
-- **Stakeholder Concern:** The system enforces strong passwords, ensures unique email addresses, and provides email verification to ensure security and ease of access for users.
-- **System Logic:** The system validates user inputs, sends confirmation emails, handles login attempts, and allows password resets with strong password enforcement.
 
 ---
 
@@ -78,10 +74,6 @@ flowchart TD
     class A,C,F,G,H user;
     class B,D,E system;
 ```
-## 📝 Explanation
-- **Covers:** Role recognition and access control (Salon Owner, Nail Technician, Client).
-- **Stakeholder Concern:** Ensures that each user has access to appropriate areas of the system based on their role, protecting sensitive data and ensuring a smooth user experience.
-- **System Logic:** The system verifies the user's credentials, determines their role, and redirects them to the corresponding dashboard.
 
 ---
 # 3. Appointment Booking
@@ -103,10 +95,6 @@ flowchart TD
     class A,C,D,F,G user;
     class B,E system;
 ```
-## 📝 Explanation
-- **Covers:** Service selection, technician availability check, booking confirmation, real-time updates, and double-booking prevention.
-- **Stakeholder Concern:** Ensures clients can easily book available services while preventing double-booking and keeping clients informed with confirmation emails.
-- **System Logic:** The system checks technician availability, confirms booking details with the user, and sends a confirmation email upon successful booking.
 
 ---
 
@@ -131,11 +119,6 @@ flowchart TD
     class A,C,D,F,G,H user;
     class B,E system;
 ```
-## 📝 Explanation
-- **Covers:** 24-hour cancellation policy enforcement, availability checks for rescheduling, confirmation prompts, and email notifications.
-- **Stakeholder Concern:** Ensures appointments are rescheduled or canceled within policy limits, and that clients receive email confirmation for any changes made.
-- **System Logic:** The system checks for policy compliance, verifies technician availability for rescheduling, and sends confirmation emails after successful rescheduling or cancellation.
-
 ---
 
 ## 5. Client Management by Nail Technicians
@@ -166,11 +149,6 @@ flowchart TD
     class A,B,C,D,E,F,G,H,J,K,L user;
     class I,M system;
 ```
-## 📝 Explanation
-- **Covers:** The system enables technicians to view appointments with client details, reschedule with client approval, receive alerts and confirmations for changes, update their availability or shifts, and see all updates reflected in real-time.
-- **Stakeholder Concern:** Nail technicians can efficiently view and manage their upcoming appointments, reschedule bookings with client approval, and make updates to their availability. The system supports daily and weekly views and sends alerts if any appointment is changed or canceled.
-- **System Logic:** Displays real-time schedules, allows rescheduling with client approval, updates technician availability, and sends alerts for any changes.
-
 ---
 ## 6. Service Management by Salon Owner/Admin
 ```mermaid
@@ -189,11 +167,6 @@ flowchart TD
     class A,B,C,D,F user;
     class E system;
 ```
-## 📝 Explanation
-- **Covers:** Modify service name, description, price, duration, technician assignment, and real-time reflection on the booking page.
-- **Stakeholder Concern:** Salon owners/admins can easily manage services, ensuring updates are reflected immediately for users and technicians.
-- **System Logic:** The system allows admins to modify services, update them in real-time on the booking page, and notify users about any changes.
-
 ---
 
 ## 7. Client Preferences Management
@@ -215,10 +188,6 @@ flowchart TD
     class F system;
 
  ```
-## 📝 Explanation
-- **Covers:** Saving preferences during booking, updating after appointments, and visibility for technicians.
-- **Stakeholder Concern:** Ensures client preferences are captured, updated, and accessible for technicians to provide a personalized service.
-- **System Logic:** The system saves client preferences during the booking process, displays them to the technician, and allows updates after appointments.
 ---
 
 ## 8.  Email Notifications
@@ -238,11 +207,3 @@ flowchart TD
     class A,C user;
     class B,D system;
 ```
-
-  ## 📝 Explanation
-  ### Email Notifications
-- **Covers:** Success/failure notifications for booking, rescheduling, cancellation, reminders, and failure logs to IT Admin.
-- **Stakeholder Concern:** Ensures that both clients and administrators are notified of important actions, ensuring transparency and communication.
-- **System Logic:** The system sends notifications based on the outcome of booking or modification actions, and logs failures to the IT admin for further investigation.
-
-
