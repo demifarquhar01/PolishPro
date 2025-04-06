@@ -12,7 +12,7 @@ The following workflows are covered:
 7. **Client Preferences Management**
 8. **Email Notifications**
 
-Each diagram includes **start/end nodes**, **actions**, **decisions**, and **parallel actions** with **swimlanes** to indicate roles/actors responsible for each step. Markdown explanations describe how these workflows address stakeholder concerns, ensuring the system is secure, efficient, and user-friendly.
+Each diagram includes **start/end nodes**, **actions**, **decisions**, and **parallel actions** with **swimlanes** to indicate roles/actors responsible for each step.
 
 
 # 1.  User Registration, Login, and Password Reset
@@ -210,4 +210,5 @@ flowchart TD
 ---
 
 ## Explanation of diagrams 
+Markdown explanations describe how these workflows address stakeholder concerns, ensuring the system is secure and efficient.
 - [Explanations](https://github.com/demifarquhar01/PolishPro/blob/2e9b097dca5eecf7b775e149e64a8ffc1fad5724/Explanations.md)
