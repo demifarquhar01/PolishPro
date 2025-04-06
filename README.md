@@ -28,3 +28,9 @@ The Nail Salon Booking System is an online solution designed to automate the boo
 - [kanban-explanation](https://github.com/demifarquhar01/PolishPro/blob/78a53ee88a1d269d6e23d339ed2cc5275fc8f36e/GitHub-Kanban-Board-Document/kanban-explanation.md)
 - [Screenshot](https://github.com/demifarquhar01/PolishPro/blob/78a53ee88a1d269d6e23d339ed2cc5275fc8f36e/GitHub-Kanban-Board-Document/Screenshot.md)
 - [reflection](https://github.com/demifarquhar01/PolishPro/blob/78a53ee88a1d269d6e23d339ed2cc5275fc8f36e/GitHub-Kanban-Board-Document/reflection.md)
+
+##  Object State Modeling and Activity Workflow Modeling Objective 
+- [State-Transition-Diagrams](https://github.com/demifarquhar01/PolishPro/blob/2e9b097dca5eecf7b775e149e64a8ffc1fad5724/State-Transition-Diagrams.md)
+- [Activity-Diagrams](https://github.com/demifarquhar01/PolishPro/blob/2e9b097dca5eecf7b775e149e64a8ffc1fad5724/Activity-Diagrams.md)
+- [Explanations](https://github.com/demifarquhar01/PolishPro/blob/2e9b097dca5eecf7b775e149e64a8ffc1fad5724/Explanations.md)
+- [Reflection](https://github.com/demifarquhar01/PolishPro/blob/e9858bae975cde4939398c57fee2557fd6104541/Reflection.md)
