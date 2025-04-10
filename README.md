@@ -34,3 +34,9 @@ The Nail Salon Booking System is an online solution designed to automate the boo
 - [Activity-Diagrams](https://github.com/demifarquhar01/PolishPro/blob/2e9b097dca5eecf7b775e149e64a8ffc1fad5724/Activity-Diagrams.md)
 - [Explanations](https://github.com/demifarquhar01/PolishPro/blob/2e9b097dca5eecf7b775e149e64a8ffc1fad5724/Explanations.md)
 - [Reflection](https://github.com/demifarquhar01/PolishPro/blob/e9858bae975cde4939398c57fee2557fd6104541/Reflection.md)
+
+## Domain Modeling and Class Diagram Development
+- [Domain-Model](https://github.com/demifarquhar01/PolishPro/blob/c53efab877b6bb486167379be0f35b2602bcedf8/Domain-Model.md)
+- [Class-Diagram](https://github.com/demifarquhar01/PolishPro/blob/c53efab877b6bb486167379be0f35b2602bcedf8/Class-Diagram.md)
+- [Reflection](https://github.com/demifarquhar01/PolishPro/blob/c53efab877b6bb486167379be0f35b2602bcedf8/Reflection.md)
+ 
