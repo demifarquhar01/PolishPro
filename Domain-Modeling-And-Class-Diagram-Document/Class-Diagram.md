@@ -165,11 +165,11 @@ classDiagram
 - `EmailNotification` supports reminders and confirmations with `sendNotification()` and `scheduleReminder()`.
 - Errors are escalated to `ITAdministrator`, reinforcing a clear separation between functional operations and technical support.
 
-## 6. Preferences & Customization
+## 6. Preferences
 - `ClientPreference` is designed as a separate class, allowing flexible storage and access of personalized data per appointment.
 - Accessible by the assigned technician, this supports a **personalized customer experience**, which is crucial for service businesses.
 
-## 7. Fine-Grained Control of Appointment Changes
+## 7. Appointment Changes
 - `Reschedule` and `Cancel` are modeled as separate classes for clarity, tracking detailed change history (e.g., reasons, timestamps).
 - Using **composition** shows that these records are tightly coupled with their respective appointments and do not exist independently.
 
