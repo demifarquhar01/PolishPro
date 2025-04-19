@@ -5,8 +5,8 @@ import java.util.List;
 
 public class NailTechnician extends User {
     
-    public NailTechnician(String name, String email, String password) {
-        super(name, email, password);
+    public NailTechnician(String userId, String name, String email, String password) {
+        super(userId, name, email, password);
     }
 
     public void viewSchedule(Schedule schedule) {

@@ -1,5 +1,4 @@
 package demifarquhar01;
-import java.util.UUID;
 
 public class User {
     private String userId;
@@ -8,13 +7,12 @@ public class User {
     private String password;
     private boolean loggedIn;
 
-    // Constructor
-    public User(String name, String email, String password) {
-        this.userId = UUID.randomUUID().toString(); // auto-generate ID
+     // Constructor
+     public User(String userId, String name, String email, String password) {
+        this.userId = userId;
         this.name = name;
         this.email = email;
         this.password = password;
-        this.loggedIn = false;
     }
 
     // Getters
@@ -29,6 +27,9 @@ public class User {
     public String getEmail() {
         return email;
     }
+    public String getPassword(){
+        return password;
+    }
 
     // Setters
     public void setName(String name) {
@@ -42,6 +43,7 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+   
 
     // Method: Register
     public void register() {

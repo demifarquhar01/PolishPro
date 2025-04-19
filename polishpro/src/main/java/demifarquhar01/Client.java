@@ -4,8 +4,9 @@ import java.time.LocalDateTime;
 
 public class Client extends User {
 
-    public Client(String name, String email, String password) {
-        super(name, email, password);
+
+public Client(String userId, String name, String email, String password) {
+        super(userId, name, email, password);
     }
 
     public void bookAppointment(Appointment appt) {

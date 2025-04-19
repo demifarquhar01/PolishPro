@@ -47,4 +47,26 @@ public class Service {
     public boolean isStatus() {
         return status;
     }
+
+ // Add these in your Service class
+public void setName(String name) {
+    this.name = name;
 }
+
+public void setDescription(String description) {
+    this.description = description;
+}
+
+public void setDuration(int duration) {
+    this.duration = duration;
+}
+
+public void setPrice(double price) {
+    this.price = price;
+}
+
+public void setStatus(boolean status) {
+    this.status = status;
+}   
+}
+

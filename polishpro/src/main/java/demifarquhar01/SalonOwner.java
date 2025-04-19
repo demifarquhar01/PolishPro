@@ -3,8 +3,8 @@ package demifarquhar01;
 
 public class SalonOwner extends User {
 
-    public SalonOwner(String name, String email, String password) {
-        super(name, email, password);
+    public SalonOwner(String userId, String name, String email, String password) {
+        super(userId, name, email, password);
     }
 
     // Method to modify a service
