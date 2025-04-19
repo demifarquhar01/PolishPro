@@ -61,8 +61,58 @@ I chose **Java** for the implementation of this system due to the following reas
 - **Clear Separation of Concerns:** Each class has a single responsibility (e.g., `ClientPreference` handles only client preferences).
 
 ### 📁 Code Structure
-The full source code is located in the `polishpro/src/demifarquhar01` directory.
+The full source code is located in the `polishpro/src/main/java/demifarquhar01` directory.
 
+
+---
+
+## ✅ Summary of Patterns Applied
+
+- **Simple Factory**  
+  The `SimpleFactory` class provides a single method to create different user types (e.g., `Client`, `NailTechnician`), centralizing object instantiation logic.
+
+- **Factory Method**  
+  The `UserCreator` interface and its concrete subclasses define how user roles are created, allowing subclasses to decide which type of user to instantiate (e.g., `ClientCreator`, `TechnicianCreator`).
+
+- **Abstract Factory**  
+  The `UserFactory` class (with `ConcreteUserFactory`) is used to create families of related user objects (`Client`, `NailTechnician`, `SalonOwner`, `ITAdministrator`) without specifying their exact classes.
+
+- **Builder**  
+  The `AppointmentBuilder` allows for flexible construction of complex `Appointment` objects, especially when not all fields are required. This helps avoid telescoping constructors.
+
+- **Prototype**  
+  The `Service` class implements the `Cloneable` interface, allowing deep copies of service objects (e.g., duplicating a predefined service package for reuse).
+
+- **Singleton**  
+  The `ITAdministrator` class ensures that only a single instance is created and used throughout the application to centralize infrastructure control and system access.
+
+## 📌 Justifications
+
+- **Simple Factory:**  
+  *Used to centralize and simplify user object creation by exposing a single method that returns different user types.*
+
+- **Factory Method:**  
+  *Applied to delegate the instantiation of specific user roles to subclasses, enabling flexibility and adhering to the Open/Closed Principle.*
+
+- **Abstract Factory:**  
+  *Used to group and instantiate related objects (various user types) without tightly coupling the code to specific implementations.*
+
+- **Builder:**  
+  *Used for the `Appointment` class to handle many optional fields (e.g., comments, time, technician) and to improve readability and maintainability.*
+
+- **Prototype:**  
+  *Implemented in the `Service` class to quickly clone service offerings, avoiding repetitive instantiation logic for similar services.*
+
+- **Singleton:**  
+  *Used for `ITAdministrator` to restrict instantiation to a single object, ensuring consistent access to system configuration and monitoring functionalities.*
+
+## 🚀 Usage
+Each pattern can be found in the `/creational_patterns` directory, with clear separation and comments to aid understanding and reuse within the PolishPro system.
+
+### 📁 Code Structure
+The full source code is located in the `polishpro/src/main/java/demifarquhar01/creational_pattern` directory.
+
+--
 
 
  
