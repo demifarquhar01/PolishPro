@@ -39,4 +39,30 @@ The Nail Salon Booking System is an online solution designed to automate the boo
 - [Domain-Model](https://github.com/demifarquhar01/PolishPro/blob/c53efab877b6bb486167379be0f35b2602bcedf8/Domain-Model.md)
 - [Class-Diagram](https://github.com/demifarquhar01/PolishPro/blob/c53efab877b6bb486167379be0f35b2602bcedf8/Class-Diagram.md)
 - [Reflection](https://github.com/demifarquhar01/PolishPro/blob/c53efab877b6bb486167379be0f35b2602bcedf8/Reflection.md)
+
+## From Class Diagrams to Code with All Creational Patterns
+
+### Class Implementation - Language Choice & Design Decisions
+### 🔷 Language Choice: Java
+
+I chose **Java** for the implementation of this system due to the following reasons:
+
+- **Object-Oriented Structure:** Java is fully object-oriented, making it an excellent fit for translating UML class diagrams directly into code using encapsulation, inheritance, and polymorphism.
+- **Strong Typing & Compile-Time Checking:** Java's strict type checking helps prevent common bugs early, which is especially useful for a structured system like a booking platform.
+- **Standard Design Pattern Support:** Java makes it easier to implement design patterns such as Factory, Singleton, and Builder, which are used throughout this system for object creation and management.
+- **Scalability and Maintainability:** Java applications are easier to maintain and scale. For a medium-sized business like a nail salon, it’s important to be able to add new features (e.g., loyalty systems, staff rating) without rewriting core logic.
+- **Community and Documentation:** Java has a massive developer community, and most issues are well-documented online, which helps speed up development and learning.
+
+### 🔷 Key Design Decisions
+- **Encapsulation:** All attributes are marked private and accessed via getters/setters to protect data and allow validation logic if needed.
+- **Inheritance:** Classes like `Client`, `SalonOwner`, and `NailTechnician` extend from a base `User` class to reduce redundancy.
+- **Composition:** The system uses composition for entities like `Appointment`, `Schedule`, and `ClientPreference` to ensure modularity and loose coupling.
+- **Error Handling:** Most methods check for `null` inputs or invalid states to make the application more robust.
+- **Clear Separation of Concerns:** Each class has a single responsibility (e.g., `ClientPreference` handles only client preferences).
+
+### 📁 Code Structure
+The full source code is located in the `polishpro/src/demifarquhar01` directory.
+
+
+
  
