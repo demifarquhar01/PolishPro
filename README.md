@@ -63,6 +63,7 @@ I chose **Java** for the implementation of this system due to the following reas
 
 ### 📁 Code Structure
 The full source code is located in the `polishpro/src/main/java/demifarquhar01` directory.
+- [src](https://github.com/demifarquhar01/PolishPro/tree/e7aecd286fb70a3eac1a0796ffd0275fc48d3b69/polishpro/src/main/java/demifarquhar01)
 
 ---
 
@@ -98,7 +99,7 @@ The full source code is located in the `polishpro/src/main/java/demifarquhar01` 
   *Used to group and instantiate related objects (various user types) without tightly coupling the code to specific implementations.*
 
 - **Builder:**  
-  *Used for the `Appointment` class to handle many optional fields (e.g., comments, time, technician) and to improve readability and maintainability.*
+*Used the **Builder** pattern for the `Appointment` class to manage optional parameters like `status` while ensuring required fields such as `appointmentId` and `dateTime` are always provided. This design choice enhances code readability, supports flexible object creation with different configurations, and enforces proper validation and immutability at the time of object construction, making the code more maintainable and robust.*
 
 - **Prototype:**  
   *Implemented in the `Service` class to quickly clone service offerings, avoiding repetitive instantiation logic for similar services.*
@@ -111,8 +112,12 @@ Each pattern can be found in the `/creational_patterns` directory, with clear se
 
 ### 📁 Code Structure
 The full source code is located in the `polishpro/src/main/java/demifarquhar01/creational_pattern` directory.
+- [creational_pattern](https://github.com/demifarquhar01/PolishPro/tree/e7aecd286fb70a3eac1a0796ffd0275fc48d3b69/polishpro/src/main/java/demifarquhar01/creational_pattern)
 
---
-
+---
+## Unit Testing Directory 
+The full source code is located in the `polishpro/src/tests/java/demifarquhar01/` directory.
+- [tests](https://github.com/demifarquhar01/PolishPro/tree/e7aecd286fb70a3eac1a0796ffd0275fc48d3b69/polishpro/src/test/java/demifarquhar01)
+---
 
  
