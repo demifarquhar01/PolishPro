@@ -120,4 +120,7 @@ The full source code is located in the `polishpro/src/tests/java/demifarquhar01/
 - [tests](https://github.com/demifarquhar01/PolishPro/tree/e7aecd286fb70a3eac1a0796ffd0275fc48d3b69/polishpro/src/test/java/demifarquhar01)
 ---
 
+## CHANGELOG
+Link to the changeLog.md file 
+- [ChangeLog](https://github.com/demifarquhar01/PolishPro/blob/94df13468258952dd4946b4eb20078ae3577b2eb/ChangeLog.md)
  
