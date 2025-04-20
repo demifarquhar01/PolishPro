@@ -1,22 +1,21 @@
 package demifarquhar01;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import org.junit.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
 
 import demifarquhar01.creational_pattern.SimpleFactory;
 
-
 public class SimpleFactoryTest {
- 
+
     @Test
-   public void testCreateClient() {
-        // Test valid user creation
+    public void testCreateClient() {
         User user = SimpleFactory.createUser("Client", "C001", "Alice", "alice@email.com", "password123");
 
-        assertNotNull(user); // Ensure object is created
-        assertTrue(user instanceof Client); // Ensure the object is of type Client
+        assertNotNull(user);
+        assertTrue(user instanceof Client);
         assertEquals("C001", user.getUserId());
         assertEquals("Alice", user.getName());
         assertEquals("alice@email.com", user.getEmail());
@@ -25,11 +24,10 @@ public class SimpleFactoryTest {
 
     @Test
     public void testCreateNailTechnician() {
-        // Test valid user creation for NailTechnician
         User user = SimpleFactory.createUser("NailTechnician", "T001", "Bob", "bob@email.com", "password456");
 
-        assertNotNull(user); // Ensure object is created
-        assertTrue(user instanceof NailTechnician); // Ensure the object is of type NailTechnician
+        assertNotNull(user);
+        assertTrue(user instanceof NailTechnician);
         assertEquals("T001", user.getUserId());
         assertEquals("Bob", user.getName());
         assertEquals("bob@email.com", user.getEmail());
@@ -38,11 +36,10 @@ public class SimpleFactoryTest {
 
     @Test
     public void testCreateSalonOwner() {
-        // Test valid user creation for SalonOwner
         User user = SimpleFactory.createUser("SalonOwner", "S001", "Sarah", "sarah@email.com", "password789");
 
-        assertNotNull(user); // Ensure object is created
-        assertTrue(user instanceof SalonOwner); // Ensure the object is of type SalonOwner
+        assertNotNull(user);
+        assertTrue(user instanceof SalonOwner);
         assertEquals("S001", user.getUserId());
         assertEquals("Sarah", user.getName());
         assertEquals("sarah@email.com", user.getEmail());
@@ -51,11 +48,10 @@ public class SimpleFactoryTest {
 
     @Test
     public void testCreateITAdministrator() {
-        // Test valid user creation for ITAdministrator
         User user = SimpleFactory.createUser("ITAdministrator", "I001", "John", "john@email.com", "adminpassword");
 
-        assertNotNull(user); // Ensure object is created
-        assertTrue(user instanceof ITAdministrator); // Ensure the object is of type ITAdministrator
+        assertNotNull(user);
+        assertTrue(user instanceof ITAdministrator);
         assertEquals("I001", user.getUserId());
         assertEquals("John", user.getName());
         assertEquals("john@email.com", user.getEmail());
@@ -63,35 +59,31 @@ public class SimpleFactoryTest {
     }
 
     @Test
-   public void testCreateUserWithInvalidType() {
-        // Test invalid user creation (unknown user type)
+    public void testCreateUserWithInvalidType() {
         User user = SimpleFactory.createUser("InvalidType", "X001", "Invalid", "invalid@email.com", "password");
-        assertNull(user); // Expect null as the user type is invalid
+
+        assertNull(user);
     }
 
     @Test
     public void testCreateUserWithNullValues() {
-        // Test null values for user attributes
         User user = SimpleFactory.createUser("Client", null, null, null, null);
-        
-        assertNotNull(user); // Object should still be created
-        assertNull(user.getUserId()); // Ensure userId is null
-        assertNull(user.getName()); // Ensure name is null
-        assertNull(user.getEmail()); // Ensure email is null
-        assertNull(user.getPassword()); // Ensure password is null
+
+        assertNotNull(user);
+        assertNull(user.getUserId());
+        assertNull(user.getName());
+        assertNull(user.getEmail());
+        assertNull(user.getPassword());
     }
 
     @Test
     public void testCreateUserWithEmptyValues() {
-        // Test empty string values for user attributes
         User user = SimpleFactory.createUser("Client", "", "", "", "");
-        
-        assertNotNull(user); // Object should still be created
-        assertEquals("", user.getUserId()); // Ensure userId is an empty string
-        assertEquals("", user.getName()); // Ensure name is an empty string
-        assertEquals("", user.getEmail()); // Ensure email is an empty string
-        assertEquals("", user.getPassword()); // Ensure password is an empty string
+
+        assertNotNull(user);
+        assertEquals("", user.getUserId());
+        assertEquals("", user.getName());
+        assertEquals("", user.getEmail());
+        assertEquals("", user.getPassword());
     }
 }
-   
-

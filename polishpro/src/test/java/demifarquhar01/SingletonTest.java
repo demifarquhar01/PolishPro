@@ -4,10 +4,10 @@ package demifarquhar01;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicReference;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.fail;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import org.junit.jupiter.api.Test;
 
 import demifarquhar01.creational_pattern.Singleton;
 
@@ -20,17 +20,13 @@ public class SingletonTest {
 
         assertNotNull(admin1);
         assertNotNull(admin2);
-        assertSame("Both instances should be the same (singleton)", admin1, admin2); // ✅ JUnit 4 format
+        assertSame(admin1, admin2, "Both instances should be the same (singleton)");
     }
 
     @Test
     public void testHandleEmailFailureMethod() {
-        try {
-            Singleton.ITAdministrator admin = Singleton.ITAdministrator.getInstance();
-            admin.handleEmailFailure(); // Verify it doesn’t throw
-        } catch (Exception e) {
-            fail("Method threw an exception: " + e.getMessage());
-        }
+        Singleton.ITAdministrator admin = Singleton.ITAdministrator.getInstance();
+        assertDoesNotThrow(admin::handleEmailFailure, "Method should not throw an exception");
     }
 
     @Test
@@ -42,7 +38,7 @@ public class SingletonTest {
         Runnable task = () -> {
             Singleton.ITAdministrator instance = Singleton.ITAdministrator.getInstance();
             ref.compareAndSet(null, instance);
-            assertSame(ref.get(), instance); // ✅ Same instance in each thread
+            assertSame(ref.get(), instance);
             latch.countDown();
         };
 

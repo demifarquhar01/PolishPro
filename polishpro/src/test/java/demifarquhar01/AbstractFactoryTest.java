@@ -1,10 +1,14 @@
 package demifarquhar01;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import demifarquhar01.creational_pattern.AbstractFactory.*;
-import org.junit.Test;
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import demifarquhar01.creational_pattern.AbstractFactory.ConcreteUserFactory;
+import demifarquhar01.creational_pattern.AbstractFactory.UserFactory;
 
 public class AbstractFactoryTest {
 
@@ -60,7 +64,7 @@ public class AbstractFactoryTest {
         UserFactory factory = new ConcreteUserFactory();
         User client = factory.createClient("C002", "No Email", "", "noEmail123");
 
-        assertEquals("", client.getEmail()); // in real-world you’d validate or throw error
+        assertEquals("", client.getEmail());
     }
 
     @Test
@@ -68,7 +72,6 @@ public class AbstractFactoryTest {
         UserFactory factory = new ConcreteUserFactory();
         User tech = factory.createNailTechnician("T002", "Null Pass", "nullpass@example.com", null);
 
-        assertNull(tech.getPassword()); // in production you'd prevent this
+        assertNull(tech.getPassword());
     }
 }
-

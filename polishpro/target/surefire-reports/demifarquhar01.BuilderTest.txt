@@ -1,13 +1,37 @@
 -------------------------------------------------------------------------------
 Test set: demifarquhar01.BuilderTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.082 s <<< FAILURE! - in demifarquhar01.BuilderTest
-shouldThrowExceptionWhenDateFormatIsInvalid(demifarquhar01.BuilderTest)  Time elapsed: 0.017 s  <<< FAILURE!
-java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.140 s <<< FAILURE! -- in demifarquhar01.BuilderTest
+demifarquhar01.BuilderTest.shouldThrowExceptionWhenDateFormatIsInvalid -- Time elapsed: 0.068 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3111)
+	at demifarquhar01.BuilderTest.shouldThrowExceptionWhenDateFormatIsInvalid(BuilderTest.java:62)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-shouldThrowExceptionWhenDateTimeIsNull(demifarquhar01.BuilderTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
+demifarquhar01.BuilderTest.shouldThrowExceptionWhenDateTimeIsNull -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3111)
+	at demifarquhar01.BuilderTest.shouldThrowExceptionWhenDateTimeIsNull(BuilderTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-shouldThrowExceptionWhenAppointmentIdIsNull(demifarquhar01.BuilderTest)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
+demifarquhar01.BuilderTest.shouldThrowExceptionWhenAppointmentIdIsNull -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3111)
+	at demifarquhar01.BuilderTest.shouldThrowExceptionWhenAppointmentIdIsNull(BuilderTest.java:46)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
