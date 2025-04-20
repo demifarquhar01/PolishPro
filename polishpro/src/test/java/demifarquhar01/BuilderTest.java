@@ -42,38 +42,24 @@ import demifarquhar01.creational_pattern.Builder;
             assertTrue(appointment.toString().contains("service='null'"));
         }
     
-        // Edge Case Test: Invalid inputs (e.g., null values for required fields)
-        @Test(expected = IllegalArgumentException.class)
-        public void testAppointmentCreationWithNullAppointmentId() {
-            // Attempting to create an appointment with an invalid appointment ID (null)
-            new Builder.AppointmentBuilder(null, "2025-04-20 10:00")
-                    .client("John Doe")
-                    .technician("Alice")
-                    .service("Manicure")
-                    .build();  // This should throw an exception
+            // ❌ Edge Case: Null appointment ID (required)
+    @Test(expected = IllegalArgumentException.class)
+    public void shouldThrowExceptionWhenAppointmentIdIsNull() {
+        new Builder.AppointmentBuilder(null, "2025-04-20 10:00").build();
         }
     
-        // Edge Case Test: Missing required field (Appointment ID)
-        @Test(expected = IllegalArgumentException.class)
-        public void testAppointmentCreationWithNullDateTime() {
-            // Attempting to create an appointment with a null dateTime (required)
-            new Builder.AppointmentBuilder("A003", null)
-                    .client("John Doe")
-                    .technician("Alice")
-                    .service("Manicure")
-                    .build();  // This should throw an exception
+         // ❌ Edge Case: Null dateTime (required)
+    @Test(expected = IllegalArgumentException.class)
+    public void shouldThrowExceptionWhenDateTimeIsNull() {
+        new Builder.AppointmentBuilder("A003", null).build();
         }
     
-        // Optional Test: Invalid date format, assuming you want to check for date format validation
-        @Test(expected = IllegalArgumentException.class)
-        public void testAppointmentCreationWithInvalidDate() {
-            // Attempting to create an appointment with an invalid date format
-            new Builder.AppointmentBuilder("A004", "2025-20-04 10:00")
-                    .client("John Doe")
-                    .technician("Alice")
-                    .service("Manicure")
-                    .build();  // This should throw an exception due to invalid date format
-        }
+       // ❌ Edge Case: Invalid date format
+    @Test(expected = IllegalArgumentException.class)
+    public void shouldThrowExceptionWhenDateFormatIsInvalid() {
+        // Assuming your builder validates the format; otherwise, remove this test
+        new Builder.AppointmentBuilder("A004", "2025-20-04 10:00").build();
+    }
     }
       
 

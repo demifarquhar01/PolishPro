@@ -15,7 +15,7 @@
     <property name="user.country" value="ZA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\DemiF\AppData\Local\Temp\surefire16760576445087489157\surefirebooter1674617325458991219.jar C:\Users\DemiF\AppData\Local\Temp\surefire16760576445087489157 2025-04-19T22-40-57_594-jvmRun1 surefire7550653186719508757tmp surefire_016694545950261382760tmp"/>
+    <property name="sun.java.command" value="C:\Users\DemiF\AppData\Local\Temp\surefire13756456491927985850\surefirebooter10860048421425221488.jar C:\Users\DemiF\AppData\Local\Temp\surefire13756456491927985850 2025-04-20T08-58-50_543-jvmRun1 surefire10949808008199892174tmp surefire_08290316734243693633tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="demifarquhar01.BuilderTest"/>
     <property name="surefire.test.class.path" value="C:\Users\DemiF\OneDrive\Desktop\PolishPro\polishpro\target\test-classes;C:\Users\DemiF\OneDrive\Desktop\PolishPro\polishpro\target\classes;C:\Users\DemiF\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\DemiF\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\DemiF\AppData\Local\Temp\surefire16760576445087489157\surefirebooter1674617325458991219.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\DemiF\AppData\Local\Temp\surefire13756456491927985850\surefirebooter10860048421425221488.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.1+9-30"/>
@@ -60,17 +60,17 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="testAppointmentCreationWithNullDateTime" classname="demifarquhar01.BuilderTest" time="0.017">
+  <testcase name="shouldThrowExceptionWhenDateFormatIsInvalid" classname="demifarquhar01.BuilderTest" time="0.017">
     <failure message="Expected exception: java.lang.IllegalArgumentException" type="java.lang.AssertionError">java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
 </failure>
   </testcase>
-  <testcase name="testAppointmentCreationWithMissingOptionalAttributes" classname="demifarquhar01.BuilderTest" time="0.006"/>
-  <testcase name="testAppointmentCreationWithNullAppointmentId" classname="demifarquhar01.BuilderTest" time="0.001">
+  <testcase name="shouldThrowExceptionWhenDateTimeIsNull" classname="demifarquhar01.BuilderTest" time="0">
     <failure message="Expected exception: java.lang.IllegalArgumentException" type="java.lang.AssertionError">java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
 </failure>
   </testcase>
+  <testcase name="testAppointmentCreationWithMissingOptionalAttributes" classname="demifarquhar01.BuilderTest" time="0.004"/>
   <testcase name="testAppointmentCreation" classname="demifarquhar01.BuilderTest" time="0"/>
-  <testcase name="testAppointmentCreationWithInvalidDate" classname="demifarquhar01.BuilderTest" time="0.002">
+  <testcase name="shouldThrowExceptionWhenAppointmentIdIsNull" classname="demifarquhar01.BuilderTest" time="0.002">
     <failure message="Expected exception: java.lang.IllegalArgumentException" type="java.lang.AssertionError">java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
 </failure>
   </testcase>

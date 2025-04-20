@@ -2,12 +2,12 @@
 Test set: demifarquhar01.BuilderTest
 -------------------------------------------------------------------------------
 Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.082 s <<< FAILURE! - in demifarquhar01.BuilderTest
-testAppointmentCreationWithNullDateTime(demifarquhar01.BuilderTest)  Time elapsed: 0.017 s  <<< FAILURE!
+shouldThrowExceptionWhenDateFormatIsInvalid(demifarquhar01.BuilderTest)  Time elapsed: 0.017 s  <<< FAILURE!
 java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
 
-testAppointmentCreationWithNullAppointmentId(demifarquhar01.BuilderTest)  Time elapsed: 0.001 s  <<< FAILURE!
+shouldThrowExceptionWhenDateTimeIsNull(demifarquhar01.BuilderTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
 
-testAppointmentCreationWithInvalidDate(demifarquhar01.BuilderTest)  Time elapsed: 0.002 s  <<< FAILURE!
+shouldThrowExceptionWhenAppointmentIdIsNull(demifarquhar01.BuilderTest)  Time elapsed: 0.002 s  <<< FAILURE!
 java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
 
