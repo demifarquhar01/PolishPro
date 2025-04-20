@@ -1,67 +1,107 @@
 package demifarquhar01;
 
+import java.time.LocalDateTime;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
-import demifarquhar01.creational_pattern.Builder;
+import demifarquhar01.creational_pattern.Builder.AppointmentBuilder;
 
 public class BuilderTest {
 
-    // ✅ Test: Correct object creation
     @Test
-    public void testAppointmentCreation() {
-        Builder.Appointment appointment = new Builder.AppointmentBuilder("A001", "2025-04-20 10:00")
-                .client("John Doe")
-                .technician("Alice")
-                .service("Manicure")
+    public void testValidAppointmentCreation() {
+        // Arrange
+        String appointmentId = "A001";
+        LocalDateTime dateTime = LocalDateTime.of(2025, 4, 20, 10, 0);
+        String status = "Booked";
+
+        // Act
+        Appointment appointment = new AppointmentBuilder(appointmentId, dateTime)
+                .status(status)
                 .build();
 
+        // Assert
         assertNotNull(appointment);
-        assertTrue(appointment.toString().contains("appointmentId='A001'"));
-        assertTrue(appointment.toString().contains("dateTime='2025-04-20 10:00'"));
-        assertTrue(appointment.toString().contains("client='John Doe'"));
-        assertTrue(appointment.toString().contains("technician='Alice'"));
-        assertTrue(appointment.toString().contains("service='Manicure'"));
+        assertEquals(appointmentId, appointment.getAppointmentId());
+        assertEquals(dateTime, appointment.getDateTime());
+        assertEquals(status, appointment.getStatus());
     }
 
-    // ✅ Test: When optional attributes are missing
     @Test
-    public void testAppointmentCreationWithMissingOptionalAttributes() {
-        Builder.Appointment appointment = new Builder.AppointmentBuilder("A002", "2025-04-21 14:00").build();
+    public void testDefaultStatus() {
+        // Arrange
+        String appointmentId = "A002";
+        LocalDateTime dateTime = LocalDateTime.of(2025, 4, 21, 11, 0);
 
+        // Act
+        Appointment appointment = new AppointmentBuilder(appointmentId, dateTime).build();
+
+        // Assert
         assertNotNull(appointment);
-        assertTrue(appointment.toString().contains("appointmentId='A002'"));
-        assertTrue(appointment.toString().contains("dateTime='2025-04-21 14:00'"));
-        assertTrue(appointment.toString().contains("client='null'"));
-        assertTrue(appointment.toString().contains("technician='null'"));
-        assertTrue(appointment.toString().contains("service='null'"));
+        assertEquals("Pending", appointment.getStatus()); // Default status should be "Pending"
     }
 
-    // ❌ Edge Case: Null appointment ID (required)
     @Test
-    public void shouldThrowExceptionWhenAppointmentIdIsNull() {
-        assertThrows(IllegalArgumentException.class, () ->
-            new Builder.AppointmentBuilder(null, "2025-04-20 10:00").build()
-        );
+    public void testInvalidAppointmentId() {
+        // Arrange
+        String appointmentId = null;
+        LocalDateTime dateTime = LocalDateTime.of(2025, 4, 22, 14, 0);
+
+        // Act & Assert
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
+            new AppointmentBuilder(appointmentId, dateTime).build();
+        });
+        assertEquals("Appointment ID and DateTime cannot be null", exception.getMessage());
     }
 
-    // ❌ Edge Case: Null dateTime (required)
     @Test
-    public void shouldThrowExceptionWhenDateTimeIsNull() {
-        assertThrows(IllegalArgumentException.class, () ->
-            new Builder.AppointmentBuilder("A003", null).build()
-        );
+    public void testInvalidDateTime() {
+        // Arrange
+        String appointmentId = "A003";
+        LocalDateTime dateTime = null;
+
+        // Act & Assert
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
+            new AppointmentBuilder(appointmentId, dateTime).build();
+        });
+        assertEquals("Appointment ID and DateTime cannot be null", exception.getMessage());
     }
 
-    // ❌ Edge Case: Invalid date format (if format validation exists)
     @Test
-    public void shouldThrowExceptionWhenDateFormatIsInvalid() {
-        assertThrows(IllegalArgumentException.class, () ->
-            new Builder.AppointmentBuilder("A004", "2025-20-04 10:00").build()
-        );
+    public void testEmptyStatus() {
+        // Arrange
+        String appointmentId = "A004";
+        LocalDateTime dateTime = LocalDateTime.of(2025, 4, 23, 12, 0);
+        String status = "";
+
+        // Act
+        Appointment appointment = new AppointmentBuilder(appointmentId, dateTime)
+                .status(status)
+                .build();
+
+        // Assert
+        assertNotNull(appointment);
+        assertEquals("", appointment.getStatus()); // Empty status should be allowed
+    }
+
+    @Test
+    public void testBuilderWithNullStatus() {
+        // Arrange
+        String appointmentId = "A005";
+        LocalDateTime dateTime = LocalDateTime.of(2025, 4, 24, 13, 0);
+
+        // Act
+        Appointment appointment = new AppointmentBuilder(appointmentId, dateTime)
+                .status(null) // Status is null
+                .build();
+
+        // Assert
+        assertNotNull(appointment);
+        assertNull(appointment.getStatus()); // Null status should be allowed
     }
 }
 

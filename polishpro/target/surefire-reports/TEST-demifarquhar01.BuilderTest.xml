@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="demifarquhar01.BuilderTest" time="0.14" tests="5" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="demifarquhar01.BuilderTest" time="0.167" tests="6" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="ZA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\DemiF\AppData\Local\Temp\surefire5186428405017078080\surefirebooter-20250420091647441_3.jar C:\Users\DemiF\AppData\Local\Temp\surefire5186428405017078080 2025-04-20T09-16-47_278-jvmRun1 surefire-20250420091647441_1tmp surefire_0-20250420091647441_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\DemiF\AppData\Local\Temp\surefire4162353279784378665\surefirebooter-20250420094314494_3.jar C:\Users\DemiF\AppData\Local\Temp\surefire4162353279784378665 2025-04-20T09-43-14_344-jvmRun1 surefire-20250420094314494_1tmp surefire_0-20250420094314494_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="demifarquhar01.BuilderTest"/>
     <property name="surefire.test.class.path" value="C:\Users\DemiF\OneDrive\Desktop\PolishPro\polishpro\target\test-classes;C:\Users\DemiF\OneDrive\Desktop\PolishPro\polishpro\target\classes;C:\Users\DemiF\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\DemiF\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\DemiF\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\DemiF\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\DemiF\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\DemiF\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\DemiF\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\DemiF\AppData\Local\Temp\surefire5186428405017078080\surefirebooter-20250420091647441_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\DemiF\AppData\Local\Temp\surefire4162353279784378665\surefirebooter-20250420094314494_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.1+9-30"/>
@@ -60,39 +60,33 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="shouldThrowExceptionWhenDateFormatIsInvalid" classname="demifarquhar01.BuilderTest" time="0.068">
-    <failure message="Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3111)
-	at demifarquhar01.BuilderTest.shouldThrowExceptionWhenDateFormatIsInvalid(BuilderTest.java:62)
+  <testcase name="testValidAppointmentCreation" classname="demifarquhar01.BuilderTest" time="0.102"/>
+  <testcase name="testInvalidAppointmentId" classname="demifarquhar01.BuilderTest" time="0.004"/>
+  <testcase name="testDefaultStatus" classname="demifarquhar01.BuilderTest" time="0.001"/>
+  <testcase name="testBuilderWithNullStatus" classname="demifarquhar01.BuilderTest" time="0.008">
+    <failure message="expected: &lt;null&gt; but was: &lt;Pending&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <null> but was: <Pending>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNull.failNotNull(AssertNull.java:50)
+	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:35)
+	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:30)
+	at org.junit.jupiter.api.Assertions.assertNull(Assertions.java:275)
+	at demifarquhar01.BuilderTest.testBuilderWithNullStatus(BuilderTest.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 ]]></failure>
   </testcase>
-  <testcase name="shouldThrowExceptionWhenDateTimeIsNull" classname="demifarquhar01.BuilderTest" time="0.003">
-    <failure message="Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3111)
-	at demifarquhar01.BuilderTest.shouldThrowExceptionWhenDateTimeIsNull(BuilderTest.java:54)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-]]></failure>
-  </testcase>
-  <testcase name="testAppointmentCreationWithMissingOptionalAttributes" classname="demifarquhar01.BuilderTest" time="0.011"/>
-  <testcase name="testAppointmentCreation" classname="demifarquhar01.BuilderTest" time="0.01"/>
-  <testcase name="shouldThrowExceptionWhenAppointmentIdIsNull" classname="demifarquhar01.BuilderTest" time="0.003">
-    <failure message="Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3111)
-	at demifarquhar01.BuilderTest.shouldThrowExceptionWhenAppointmentIdIsNull(BuilderTest.java:46)
+  <testcase name="testInvalidDateTime" classname="demifarquhar01.BuilderTest" time="0.002"/>
+  <testcase name="testEmptyStatus" classname="demifarquhar01.BuilderTest" time="0.001">
+    <failure message="expected: &lt;&gt; but was: &lt;Pending&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <> but was: <Pending>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at demifarquhar01.BuilderTest.testEmptyStatus(BuilderTest.java:88)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)

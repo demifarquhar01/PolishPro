@@ -16,7 +16,6 @@ demifarquhar01\Service.class
 demifarquhar01\creational_pattern\Builder$AppointmentBuilder.class
 demifarquhar01\Cancel.class
 demifarquhar01\creational_pattern\FactoryMethod.class
-demifarquhar01\creational_pattern\Builder$Appointment.class
 demifarquhar01\creational_pattern\FactoryMethod$PedicureService.class
 demifarquhar01\creational_pattern\Singleton$ITAdministrator.class
 demifarquhar01\Appointment.class

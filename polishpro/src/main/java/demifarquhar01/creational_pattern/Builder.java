@@ -1,80 +1,38 @@
 package demifarquhar01.creational_pattern;
+import java.time.LocalDateTime;
+
+import demifarquhar01.Appointment;
 
 public class Builder {
-        // Make Appointment class static
-        public static class Appointment {
-            private String appointmentId;
-            private String dateTime;
-            private String client;
-            private String technician;
-            private String service;
     
-            // Private constructor to be used by the builder
-            private Appointment(AppointmentBuilder builder) {
-                this.appointmentId = builder.appointmentId;
-                this.dateTime = builder.dateTime;
-                this.client = builder.client;
-                this.technician = builder.technician;
-                this.service = builder.service;
+    // Static inner Builder class
+    public static class AppointmentBuilder {
+        private String appointmentId;
+        private LocalDateTime dateTime;
+        private String status = "Pending"; // Default status is "Pending"
+
+        // Constructor for required fields
+        public AppointmentBuilder(String appointmentId, LocalDateTime dateTime) {
+            if (appointmentId == null || dateTime == null) {
+                throw new IllegalArgumentException("Appointment ID and DateTime cannot be null");
             }
-    
-            @Override
-            public String toString() {
-                return "Appointment{" +
-                        "appointmentId='" + appointmentId + '\'' +
-                        ", dateTime='" + dateTime + '\'' +
-                        ", client='" + client + '\'' +
-                        ", technician='" + technician + '\'' +
-                        ", service='" + service + '\'' +
-                        '}';
-            }
+            this.appointmentId = appointmentId;
+            this.dateTime = dateTime;
         }
-    
-        public static class AppointmentBuilder {
-            private String appointmentId;
-            private String dateTime;
-            private String client;
-            private String technician;
-            private String service;
-    
-            // Required fields
-            public AppointmentBuilder(String appointmentId, String dateTime) {
-                this.appointmentId = appointmentId;
-                this.dateTime = dateTime;
+
+        // Setter for the optional status field
+        public AppointmentBuilder status(String status) {
+            if (status != null && !status.isEmpty()) {
+                this.status = status;
             }
-    
-            // Optional fields
-            public AppointmentBuilder client(String client) {
-                this.client = client;
-                return this;
-            }
-    
-            public AppointmentBuilder technician(String technician) {
-                this.technician = technician;
-                return this;
-            }
-    
-            public AppointmentBuilder service(String service) {
-                this.service = service;
-                return this;
-            }
-    
-            // Build method to create an Appointment object
-            public Appointment build() {
-                return new Appointment(this);
-            }
+            return this;
         }
-    
-        public static void main(String[] args) {
-            // Using the builder to create an Appointment object
-            Appointment appointment = new AppointmentBuilder("A001", "2025-04-20 10:00")
-                    .client("John Doe")
-                    .technician("Alice")
-                    .service("Manicure")
-                    .build();
-    
-            // Print the appointment details
-            System.out.println(appointment);
+
+        // Build method to create the Appointment object
+        public Appointment build() {
+            return new Appointment(appointmentId, dateTime, status);
         }
     }
-    
+}
+
+        
