@@ -52,7 +52,8 @@ I chose **Java** for the implementation of this system due to the following reas
 - **Standard Design Pattern Support:** Java makes it easier to implement design patterns such as Factory, Singleton, and Builder, which are used throughout this system for object creation and management.
 - **Scalability and Maintainability:** Java applications are easier to maintain and scale. For a medium-sized business like a nail salon, it’s important to be able to add new features (e.g., loyalty systems, staff rating) without rewriting core logic.
 - **Community and Documentation:** Java has a massive developer community, and most issues are well-documented online, which helps speed up development and learning.
-
+- **Maven Support**: Java integrates seamlessly with Maven, which simplifies dependency management, builds, and testing for the system.
+  
 ### 🔷 Key Design Decisions
 - **Encapsulation:** All attributes are marked private and accessed via getters/setters to protect data and allow validation logic if needed.
 - **Inheritance:** Classes like `Client`, `SalonOwner`, and `NailTechnician` extend from a base `User` class to reduce redundancy.
@@ -62,7 +63,6 @@ I chose **Java** for the implementation of this system due to the following reas
 
 ### 📁 Code Structure
 The full source code is located in the `polishpro/src/main/java/demifarquhar01` directory.
-
 
 ---
 
