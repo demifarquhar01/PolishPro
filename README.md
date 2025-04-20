@@ -118,6 +118,8 @@ The full source code is located in the `polishpro/src/main/java/demifarquhar01/c
 ## Unit Testing Directory 
 The full source code is located in the `polishpro/src/tests/java/demifarquhar01/` directory.
 - [tests](https://github.com/demifarquhar01/PolishPro/tree/e7aecd286fb70a3eac1a0796ffd0275fc48d3b69/polishpro/src/test/java/demifarquhar01)
+- **Link to test reports**
+[link](https://github.com/demifarquhar01/PolishPro/tree/f302396686e8d99568ee4c8c83131c1be845e917/polishpro/target/surefire-reports)
 ---
 
 ## CHANGELOG
