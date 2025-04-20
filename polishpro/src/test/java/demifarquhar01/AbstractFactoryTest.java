@@ -1,6 +1,4 @@
 package demifarquhar01;
-
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
@@ -12,6 +10,7 @@ import demifarquhar01.creational_pattern.AbstractFactory.UserFactory;
 
 public class AbstractFactoryTest {
 
+    //JUnit 5
     @Test
     public void testCreateClient() {
         UserFactory factory = new ConcreteUserFactory();

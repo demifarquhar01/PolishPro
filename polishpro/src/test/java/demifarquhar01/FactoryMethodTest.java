@@ -11,7 +11,7 @@ import demifarquhar01.creational_pattern.FactoryMethod.PedicureServiceFactory;
 import demifarquhar01.creational_pattern.FactoryMethod.ServiceFactory;
 
 public class FactoryMethodTest {
-
+//JUnit 5
     @Test
     public void testManicureServiceCreation() {
         ServiceFactory factory = new ManicureServiceFactory();

@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 import demifarquhar01.creational_pattern.Singleton;
 
 public class SingletonTest {
-
+//JUnit 5
     @Test
     public void testSingletonReturnsSameInstance() {
         Singleton.ITAdministrator admin1 = Singleton.ITAdministrator.getInstance();

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import demifarquhar01.creational_pattern.SimpleFactory;
 
 public class SimpleFactoryTest {
-
+//JUnit 5
     @Test
     public void testCreateClient() {
         User user = SimpleFactory.createUser("Client", "C001", "Alice", "alice@email.com", "password123");

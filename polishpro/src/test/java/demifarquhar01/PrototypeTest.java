@@ -10,6 +10,7 @@ import demifarquhar01.creational_pattern.Prototype.Service;
 
 public class PrototypeTest {
 
+    //JUnit 5
     @Test
     public void testServicePrototypeClone() throws CloneNotSupportedException {
         // Arrange

@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import demifarquhar01.creational_pattern.Builder.AppointmentBuilder;
 
 public class BuilderTest {
-
+//JUnit 5
     @Test
     public void testValidAppointmentCreation() {
         // Arrange
