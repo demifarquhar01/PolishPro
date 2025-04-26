@@ -125,4 +125,38 @@ The full source code is located in the `polishpro/src/tests/java/demifarquhar01/
 ## CHANGELOG
 Link to the changeLog.md file 
 - [ChangeLog](https://github.com/demifarquhar01/PolishPro/blob/94df13468258952dd4946b4eb20078ae3577b2eb/ChangeLog.md)
+
+  ---
+
+# Assignement 11 :
+
+### Repository Pattern Justification
+Implemented a `/repositories` directory using interfaces to promote clean architecture and separation of concerns. 
+A generic `Repository<T, ID>` interface was used to avoid duplication of basic CRUD operations across all entity repositories (e.g., Service, ITAdministrator, NailTechnician). Each 
+specific repository interface (like `ServiceRepository`) extends the generic one, ensuring consistency and flexibility.
+
+Using generics helped:
+- Reduce repetitive code
+- Maintain type safety
+- Make the system easier to maintain and extend in the future
+
+This structure also supports future changes, like swapping in a database-backed repository without affecting the rest of the application.
+   
+## Repository Interface Design
+- [Source code link](https://github.com/demifarquhar01/PolishPro/tree/74e7f3dc8958680d528af84b249d3b2d6bb92f02/polishpro/src/main/java/demifarquhar01/repositories)
+
+## In-Memory Implementation 
+- [Source code link](https://github.com/demifarquhar01/PolishPro/tree/74e7f3dc8958680d528af84b249d3b2d6bb92f02/polishpro/src/main/java/demifarquhar01/repositories/inmemory)
+- [tests](https://github.com/demifarquhar01/PolishPro/tree/74e7f3dc8958680d528af84b249d3b2d6bb92f02/polishpro/src/test/java/demifarquhar01)
+
+## Storage-Abstraction Mechanism 
+- [Source code link](https://github.com/demifarquhar01/PolishPro/tree/74e7f3dc8958680d528af84b249d3b2d6bb92f02/polishpro/src/main/java/demifarquhar01/factories)
+
+## Future-Proofing 
+- [Source code link](https://github.com/demifarquhar01/PolishPro/tree/74e7f3dc8958680d528af84b249d3b2d6bb92f02/polishpro/src/main/java/demifarquhar01/repositories/filesystem)
+- [Update Class Diagram](https://github.com/demifarquhar01/PolishPro/blob/74e7f3dc8958680d528af84b249d3b2d6bb92f02/Domain-Modeling-And-Class-Diagram-Document/Class-Diagram.md)
+---
+  
+  
+
  
