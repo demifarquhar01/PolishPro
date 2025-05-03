@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: demifarquhar01.ServiceManagementServiceTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.458 s -- in demifarquhar01.ServiceManagementServiceTest
