@@ -25,7 +25,6 @@
   <relativePath/> <!-- lookup parent from repository -->
 </parent>
 
-
 <dependencies>
   <!-- JUnit 5 (Jupiter) API -->
   <dependency>
@@ -61,6 +60,28 @@
   <artifactId>spring-boot-starter-test</artifactId>
   <scope>test</scope>
 </dependency>
+
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-core</artifactId>
+    <version>4.8.1</version> <!-- Ensure this is the correct version -->
+    <scope>test</scope>
+</dependency>
+
+  <!-- Spring Boot Starter Test for testing Spring components -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Optional: Dependency for MockMvc to test the controller layer -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+
 </dependencies>
 
   <build>

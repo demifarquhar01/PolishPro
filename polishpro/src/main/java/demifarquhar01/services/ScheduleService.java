@@ -55,6 +55,11 @@ public class ScheduleService {
         System.out.println("Schedule removed: " + scheduleId);
     }
 
+    // Added getAllSchedules method to fetch all schedules
+    public List<Schedule> getAllSchedules() {
+        return scheduleRepository.findAll();
+    }
+
     private boolean ownsSchedule(NailTechnician technician, Schedule schedule) {
         return schedule.getScheduleId().equals(technician.getUserId());
     }
