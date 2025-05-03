@@ -18,6 +18,14 @@
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
 
+  <parent>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-parent</artifactId>
+  <version>3.2.4</version> <!-- or latest stable -->
+  <relativePath/> <!-- lookup parent from repository -->
+</parent>
+
+
 <dependencies>
   <!-- JUnit 5 (Jupiter) API -->
   <dependency>
@@ -39,15 +47,29 @@
   <dependency>
     <groupId>org.junit.jupiter</groupId>
     <artifactId>junit-jupiter-params</artifactId>
-    <version>5.10.0</version>
     <scope>test</scope>
   </dependency>
-</dependencies>
+<dependency>
+<!-- Spring Boot Web Starter -->
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
 
+<!-- Optional: Spring Boot Starter Test -->
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-test</artifactId>
+  <scope>test</scope>
+</dependency>
+</dependencies>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
+      <plugin>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
