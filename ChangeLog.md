@@ -53,3 +53,39 @@ All notable changes to this project will be documented in this file.
 ## GitHub Project Board
  ![image](https://github.com/demifarquhar01/PolishPro/blob/8e88d267ff7c985b91cf83d31efa6372c6f7d5a6/update%20board.png)
 
+---
+# Service Layer and REST API Implementation
+## [v1.1.0]
+
+### Added
+
+#### Service Layer
+- Implemented client appointment booking functionality (#43)
+- Implemented Create User for login (#44)
+- Nail Technicians can manage their own schedules (#48)
+- Updated `pom.xml`
+
+#### Testing
+- Added unit tests for `AppointmentService`, `ScheduleService`, and `UserService`
+
+### REST API
+- Implemented REST API for managing appointments, schedules, and users (#50)
+
+#### API Endpoints
+- **Appointment**
+- **Schedule**
+- **User**
+
+### Fixed
+- Updated testing files to reflect changes in the API structure.
+- Deleted entities that were not needed.
+
+### Documentation
+- Updated `update_board.md` [Board](https://github.com/demifarquhar01/PolishPro/blob/d05219e847c6e176cb34fd7d3fc587791c863978/polishpro/src/img/update_board.md)
+- Updated `CHANGELOG.md`
+
+### Technology
+- Programming language: Java
+- Framework: Spring Boot
+
+
