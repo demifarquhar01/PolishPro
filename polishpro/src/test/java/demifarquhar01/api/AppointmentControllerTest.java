@@ -1,4 +1,4 @@
-package demifarquhar01;
+package demifarquhar01.api;
 
 
     import java.time.LocalDateTime;
@@ -25,6 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import demifarquhar01.Appointment;
 import demifarquhar01.repositories.AppointmentRepository;
     
     

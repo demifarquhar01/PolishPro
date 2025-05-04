@@ -1,4 +1,4 @@
-package demifarquhar01;
+package demifarquhar01.api;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -22,6 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import demifarquhar01.Schedule;
 import demifarquhar01.services.ScheduleService;
 
 @SpringBootTest

@@ -1,4 +1,4 @@
-package demifarquhar01;
+package demifarquhar01.services;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
@@ -10,9 +10,10 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import demifarquhar01.NailTechnician;
+import demifarquhar01.Schedule;
 import demifarquhar01.repositories.ScheduleRepository;
 import demifarquhar01.repositories.inmemory.InMemoryScheduleRepository;
-import demifarquhar01.services.ScheduleService;
 
 
 public class ScheduleServiceTest {

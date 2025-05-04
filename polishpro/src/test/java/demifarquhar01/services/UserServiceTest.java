@@ -1,4 +1,4 @@
-package demifarquhar01;
+package demifarquhar01.services;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +11,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import demifarquhar01.User;
 import demifarquhar01.repositories.UserRepository;
 import demifarquhar01.repositories.inmemory.InMemoryUserRepository;
-import demifarquhar01.services.UserService;
 
 public class UserServiceTest {
 

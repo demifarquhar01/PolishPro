@@ -1,4 +1,4 @@
-package demifarquhar01;
+package demifarquhar01.services;
 
 
 import java.time.LocalDateTime;
@@ -8,9 +8,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import demifarquhar01.Appointment;
+import demifarquhar01.Client;
+import demifarquhar01.Service;
 import demifarquhar01.repositories.AppointmentRepository;
 import demifarquhar01.repositories.inmemory.InMemoryAppointmentRepository;
-import demifarquhar01.services.AppointmentService;
 
 public class AppointmentServiceTest {
 

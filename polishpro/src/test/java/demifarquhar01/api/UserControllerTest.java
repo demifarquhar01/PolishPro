@@ -1,4 +1,4 @@
-package demifarquhar01;
+package demifarquhar01.api;
 
 
 
@@ -14,7 +14,8 @@ package demifarquhar01;
 
     import com.fasterxml.jackson.databind.ObjectMapper;
 
-    import demifarquhar01.services.UserService;
+import demifarquhar01.User;
+import demifarquhar01.services.UserService;
     
     @SpringBootTest
     @AutoConfigureMockMvc
