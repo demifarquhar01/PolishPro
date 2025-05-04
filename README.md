@@ -156,7 +156,24 @@ This structure also supports future changes, like swapping in a database-backed 
 - [Source code link](https://github.com/demifarquhar01/PolishPro/tree/74e7f3dc8958680d528af84b249d3b2d6bb92f02/polishpro/src/main/java/demifarquhar01/repositories/filesystem)
 - [Update Class Diagram](https://github.com/demifarquhar01/PolishPro/blob/74e7f3dc8958680d528af84b249d3b2d6bb92f02/Domain-Modeling-And-Class-Diagram-Document/Class-Diagram.md)
 ---
-  
+# Assignement 12:
+
+## Service Layer 
+- [link](https://github.com/demifarquhar01/PolishPro/tree/b2e14257e06fae6791b7125ec5a52b4863d43239/polishpro/src/main/java/demifarquhar01/services)
+- [test](https://github.com/demifarquhar01/PolishPro/tree/b2e14257e06fae6791b7125ec5a52b4863d43239/polishpro/src/test/java/demifarquhar01/services)
+
+##  REST API Development
+- [link](https://github.com/demifarquhar01/PolishPro/tree/b2e14257e06fae6791b7125ec5a52b4863d43239/polishpro/src/main/java/demifarquhar01/api)
+- [test](https://github.com/demifarquhar01/PolishPro/tree/b2e14257e06fae6791b7125ec5a52b4863d43239/polishpro/src/test/java/demifarquhar01/api)
+
+## Project board uodated
+- [board](https://github.com/demifarquhar01/PolishPro/blob/b2e14257e06fae6791b7125ec5a52b4863d43239/polishpro/src/img/update_board.md)
+
+## ChangeLog
+- [update](https://github.com/demifarquhar01/PolishPro/blob/b2e14257e06fae6791b7125ec5a52b4863d43239/ChangeLog.md)
+---
+
+
   
 
  
