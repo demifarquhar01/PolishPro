@@ -78,4 +78,3 @@ import demifarquhar01.creational_pattern.Builder;
             assertEquals("Appointment ID and DateTime cannot be null", exception.getMessage());
         }
     }
-    
