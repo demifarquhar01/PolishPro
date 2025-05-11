@@ -173,6 +173,16 @@ This structure also supports future changes, like swapping in a database-backed 
 - [update](https://github.com/demifarquhar01/PolishPro/blob/b2e14257e06fae6791b7125ec5a52b4863d43239/ChangeLog.md)
 ---
 
+# Assignement 13 
+## Branch Protection Setup
+- [Protection](https://github.com/demifarquhar01/PolishPro/blob/d61ea90c21e1d9796ae83ea99d729f5641b3ec7c/Protection.md)
+- [Screenshot](https://github.com/demifarquhar01/PolishPro/blob/d61ea90c21e1d9796ae83ea99d729f5641b3ec7c/Branch_Rule_Screenshot.png)
+
+## CI Pipeline: Test Automation
+- [.github/workflows/ci.yml](https://github.com/demifarquhar01/PolishPro/blob/d61ea90c21e1d9796ae83ea99d729f5641b3ec7c/.github/workflows/ci.yml)
+- [Test Screenshot](https://github.com/demifarquhar01/PolishPro/blob/d61ea90c21e1d9796ae83ea99d729f5641b3ec7c/tests.png)
+
+
 
   
 
