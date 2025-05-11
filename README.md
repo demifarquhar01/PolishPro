@@ -213,6 +213,7 @@ You can view the workflow configuration in [`.github/workflows/ci.yml`](https://
 ## CD Pipeline: Release Artifact
 - [.github/workflows/ci.yml](https://github.com/demifarquhar01/PolishPro/blob/d61ea90c21e1d9796ae83ea99d729f5641b3ec7c/.github/workflows/ci.yml)
 - [Screenshot of the generated artifact in GitHub Actions](https://github.com/demifarquhar01/PolishPro/blob/18eedb458aa6dee9cd01804a4bb3f0112d3a4f38/Artifact%20screenshot.png)
+- [Another screenshot of the generated artifact in GitHub Actions](https://github.com/demifarquhar01/PolishPro/blob/e5e4f1c4563bc7e697715f640a5588297076ae0a/Artifact%20screenshot1.png)
 
 ## PR Workflow
 - [Screenshot of a PR blocked by failing tests](https://github.com/demifarquhar01/PolishPro/blob/18eedb458aa6dee9cd01804a4bb3f0112d3a4f38/PR%20fail.png)
