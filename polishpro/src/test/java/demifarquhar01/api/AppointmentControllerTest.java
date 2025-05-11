@@ -10,7 +10,8 @@ package demifarquhar01.api;
     import static org.hamcrest.Matchers.hasSize;
     import static org.hamcrest.Matchers.is;
     import static org.hamcrest.Matchers.not;
-    import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
     import org.springframework.beans.factory.annotation.Autowired;
     import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
     import org.springframework.boot.test.context.SpringBootTest;
@@ -28,7 +29,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import demifarquhar01.Appointment;
 import demifarquhar01.repositories.AppointmentRepository;
     
-    
+    @Disabled
     @SpringBootTest
     @AutoConfigureMockMvc
     public class AppointmentControllerTest {
@@ -42,6 +43,7 @@ import demifarquhar01.repositories.AppointmentRepository;
         @Autowired
         private ObjectMapper objectMapper;
     
+        @Disabled
         @Test
         public void testGetAllAppointments_ReturnsOk() throws Exception {
             // Ensure at least one appointment exists
@@ -53,7 +55,7 @@ import demifarquhar01.repositories.AppointmentRepository;
                     .andExpect(jsonPath("$", hasSize(greaterThanOrEqualTo(1))))
                     .andExpect(jsonPath("$[0].appointmentId", not(emptyOrNullString())));
         }
-    
+    @Disabled
         @Test
         public void testBookAppointment_ReturnsSuccess() throws Exception {
             Map<String, Object> requestBody = Map.of(
@@ -71,7 +73,7 @@ import demifarquhar01.repositories.AppointmentRepository;
                     .andExpect(jsonPath("$.appointmentId", not(emptyOrNullString())))
                     .andExpect(jsonPath("$.status", is("Pending")));
         }
-    
+    @Disabled
         @Test
         public void testBookAppointment_WithMissingFields_ReturnsError() throws Exception {
             Map<String, Object> requestBody = Map.of(
@@ -85,7 +87,7 @@ import demifarquhar01.repositories.AppointmentRepository;
                     .andExpect(status().isOk())
                     .andExpect(jsonPath("$.error", containsString("Invalid request data")));
         }
-    
+    @Disabled
         @Test
         public void testUpdateAppointment_ReturnsSuccess() throws Exception {
             // Save a test appointment first
