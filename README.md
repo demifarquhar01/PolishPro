@@ -174,16 +174,50 @@ This structure also supports future changes, like swapping in a database-backed 
 ---
 
 # Assignement 13 
+
+## Running Tests Locally
+
+To run unit tests locally, ensure you have **Java 17+** and **Maven** installed, then run:
+```bash
+mvn test
+```
+---
+## CI/CD Pipeline Overview
+
+Using **GitHub Actions** for Continuous Integration (CI) and Continuous Deployment (CD).
+
+### Workflow Triggers
+- `push` or `pull_request` to any branch: runs unit tests using `mvn test`
+- `push` to the `main` branch: builds and uploads release artifacts
+
+### Required Checks
+- All tests must pass before a Pull Request can be merged
+- PRs are blocked if any test fails or if approvals are missing
+
+### Artifact Generation
+- Artifacts (JAR files) are **only** built and uploaded when changes are pushed to the `main` branch
+- Artifacts are **not generated** for pull requests or feature branches
+
+You can view the workflow configuration in [`.github/workflows/ci.yml`](https://github.com/demifarquhar01/PolishPro/blob/d61ea90c21e1d9796ae83ea99d729f5641b3ec7c/.github/workflows/ci.yml).
+
 ## Branch Protection Setup
 - [Protection](https://github.com/demifarquhar01/PolishPro/blob/d61ea90c21e1d9796ae83ea99d729f5641b3ec7c/Protection.md)
-- [Screenshot](https://github.com/demifarquhar01/PolishPro/blob/d61ea90c21e1d9796ae83ea99d729f5641b3ec7c/Branch_Rule_Screenshot.png)
+- [Screenshot of your branch protection rules](https://github.com/demifarquhar01/PolishPro/blob/d61ea90c21e1d9796ae83ea99d729f5641b3ec7c/Branch_Rule_Screenshot.png)
 
 ## CI Pipeline: Test Automation
 - [.github/workflows/ci.yml](https://github.com/demifarquhar01/PolishPro/blob/d61ea90c21e1d9796ae83ea99d729f5641b3ec7c/.github/workflows/ci.yml)
-- [Test Screenshot](https://github.com/demifarquhar01/PolishPro/blob/d61ea90c21e1d9796ae83ea99d729f5641b3ec7c/tests.png)
+- [Screenshot of test results in GitHub Actions fail](https://github.com/demifarquhar01/PolishPro/blob/d61ea90c21e1d9796ae83ea99d729f5641b3ec7c/tests.png)
+- [Screenshot test results in GitHub Actions success](https://github.com/demifarquhar01/PolishPro/blob/18eedb458aa6dee9cd01804a4bb3f0112d3a4f38/Test%20results%20screenshot%20pass.png)
 
+## CD Pipeline: Release Artifact
+- [.github/workflows/ci.yml](https://github.com/demifarquhar01/PolishPro/blob/d61ea90c21e1d9796ae83ea99d729f5641b3ec7c/.github/workflows/ci.yml)
+- [Screenshot of the generated artifact in GitHub Actions](https://github.com/demifarquhar01/PolishPro/blob/18eedb458aa6dee9cd01804a4bb3f0112d3a4f38/Artifact%20screenshot.png)
 
-
-  
-
- 
+## PR Workflow
+- [Screenshot of a PR blocked by failing tests](https://github.com/demifarquhar01/PolishPro/blob/18eedb458aa6dee9cd01804a4bb3f0112d3a4f38/PR%20fail.png)
+### Summary
+This screenshot correctly shows a PR that:
+- Is blocked due to **failing tests**
+- Is awaiting a **code review**
+- **Skips artifact generation** unless merged to `main`
+---
