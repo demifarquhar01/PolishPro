@@ -7,6 +7,9 @@ public class Appointment {
     private String status;
 
     public Appointment(String appointmentId, LocalDateTime dateTime, String status) {
+        if (appointmentId == null || dateTime == null) {
+            throw new IllegalArgumentException("Appointment ID and DateTime cannot be null");
+        }
         this.appointmentId = appointmentId;
         this.dateTime = dateTime;
         this.status = status;
@@ -33,7 +36,6 @@ public class Appointment {
         System.out.println("Appointment " + appointmentId + " is confirmed for " + dateTime);
     }
 
-    // Optionally, add getters
     public String getAppointmentId() {
         return appointmentId;
     }
@@ -46,5 +48,6 @@ public class Appointment {
         return status;
     }
 }
+
 
   
