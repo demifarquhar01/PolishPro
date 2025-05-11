@@ -27,7 +27,9 @@ import demifarquhar01.creational_pattern.Builder;
             assertNotNull(appointment);
             assertEquals(appointmentId, appointment.getAppointmentId());
             assertEquals(dateTime, appointment.getDateTime());
-            assertEquals(status, appointment.getStatus());
+            //assertEquals(status, appointment.getStatus());
+            assertEquals("Cancelled", appointment.getStatus()); // This will fail
+
         }
     
         @Test
