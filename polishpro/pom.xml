@@ -136,7 +136,6 @@
     </execution>
   </executions>
   <configuration>
-    <!-- Exclude problematic classes/packages from instrumentation -->
     <excludes>
       <exclude>org/springframework/web/bind/annotation/**</exclude>
       <exclude>demifarquhar01/services/**</exclude>
