@@ -34,14 +34,6 @@
     <scope>test</scope>
   </dependency>
 
-  <!-- JUnit 5 Engine for running tests -->
-  <dependency>
-    <groupId>org.junit.jupiter</groupId>
-    <artifactId>junit-jupiter-engine</artifactId>
-    <version>5.10.0</version>
-    <scope>test</scope>
-  </dependency>
-
   <!-- Optional: Assertions and other helpful test libraries -->
   <dependency>
     <groupId>org.junit.jupiter</groupId>
@@ -125,26 +117,33 @@
       </plugins>
     </pluginManagement>
     <plugins>
-    <!-- ✅ JaCoCo plugin to generate coverage reports -->
-    <plugin>
-      <groupId>org.jacoco</groupId>
-      <artifactId>jacoco-maven-plugin</artifactId>
-      <version>0.8.5</version>
-      <executions>
-        <execution>
-          <goals>
-            <goal>prepare-agent</goal>
-          </goals>
-        </execution>
-        <execution>
-          <id>report</id>
-          <phase>test</phase>
-          <goals>
-            <goal>report</goal>
-          </goals>
-        </execution>
-      </executions>
-    </plugin>
+  <plugin>
+  <groupId>org.jacoco</groupId>
+  <artifactId>jacoco-maven-plugin</artifactId>
+  <version>0.8.5</version>
+  <executions>
+    <execution>
+      <goals>
+        <goal>prepare-agent</goal>
+      </goals>
+    </execution>
+    <execution>
+      <id>report</id>
+      <phase>test</phase>
+      <goals>
+        <goal>report</goal>
+      </goals>
+    </execution>
+  </executions>
+  <configuration>
+    <!-- Exclude problematic classes/packages from instrumentation -->
+    <excludes>
+      <exclude>org/springframework/web/bind/annotation/**</exclude>
+      <exclude>demifarquhar01/services/**</exclude>
+      <exclude>demifarquhar01/repositories/inmemory/**</exclude>
+    </excludes>
+  </configuration>
+</plugin>
   </plugins>
   </build>
 </project>
