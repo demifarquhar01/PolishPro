@@ -173,7 +173,8 @@ This structure also supports future changes, like swapping in a database-backed 
 - [update](https://github.com/demifarquhar01/PolishPro/blob/b2e14257e06fae6791b7125ec5a52b4863d43239/ChangeLog.md)
 ---
 
-# Assignement 13 
+# Implementing CI/CD with GitHub Actions
+**Assignment 13**
 
 ## Running Tests Locally
 
