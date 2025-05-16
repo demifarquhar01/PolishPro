@@ -27,11 +27,11 @@ The Nail Salon Booking System is an online solution designed to automate the boo
 | #45          | Send out Email notifications               | Implement email notifications for appointments and reminders.    | Feature Request   |
 | #46          | Nail technicians view client preferences   | Allow nail technicians to view and manage client preferences.    | Feature Request   |
 | #49          | Implement Reschedules and Cancellations    | Add functionality for clients to reschedule or cancel bookings.  | Feature Request   |
-| #50          | Improve validation on User Registration    | Enhance form validation to prevent invalid user data submission. | Good First Issue  |
-| #51          | Fix UI bugs in Login Page                   | Correct layout and styling issues on the login screen.           | Good First Issue  |
-| #54          | Add unit tests for Appointment class       | Write tests to increase code coverage and reliability.           | Good First Issue  |
-| #55          | Update README with CI badge                 | Add a GitHub Actions build status badge to README.md             | Good First Issue  |
-| #56          | Create .gitignore file                      | Add .gitignore to exclude IDE and build files from the repo.     | Good First Issue  |
+| #61         | Fix Typos in README.md | Review the README.md file and correct any spelling or grammatical errors to improve clarity and professionalism.| Good First Issue  |
+| #63          |Improve JavaDoc Comments in Builder Classes     | Enhance the documentation of the builder classes by adding JavaDoc comments to public methods and key parts of the code.  | Good First Issue  |
+| #62         | Add unit tests for Appointment class       | Write tests to increase code coverage and reliability.           | Good First Issue  |
+| #64          | Add a CI Badge to README.md                | Integrate a GitHub Actions status badge into the README.md to display the current build status (e.g., passing or failing). | Good First Issue  |
+| #65          | Create .gitignore file                      |  Add a .gitignore file to the root of the repository to exclude unnecessary files such as compiled class files, IDE configurations, and log files.   | Good First Issue  |
 
 ---
 
