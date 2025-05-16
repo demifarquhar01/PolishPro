@@ -4,6 +4,37 @@ Nail Salon Booking System
 ## Project Description
 The Nail Salon Booking System is an online solution designed to automate the booking process for nail care services. This system will streamline appointment management, reduce operational errors, and enhance the customer experience by providing a user-friendly interface for booking, rescheduling, and canceling appointments.
 
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Java 17+
+- Maven 3.8+
+- Git
+- IDE (IntelliJ IDEA, Eclipse, or VS Code with Java plugins)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/demifarquhar01/PolishPro.git
+   cd PolishPro
+---
+## 🚀 Features and Good First Issues for Contribution
+
+| Issue Number | Title                                      | Description                                                       | Type              |
+|--------------|--------------------------------------------|-------------------------------------------------------------------|-------------------|
+| #45          | Send out Email notifications               | Implement email notifications for appointments and reminders.    | Feature Request   |
+| #46          | Nail technicians view client preferences   | Allow nail technicians to view and manage client preferences.    | Feature Request   |
+| #49          | Implement Reschedules and Cancellations    | Add functionality for clients to reschedule or cancel bookings.  | Feature Request   |
+| #50          | Improve validation on User Registration    | Enhance form validation to prevent invalid user data submission. | Good First Issue  |
+| #51          | Fix UI bugs in Login Page                   | Correct layout and styling issues on the login screen.           | Good First Issue  |
+| #54          | Add unit tests for Appointment class       | Write tests to increase code coverage and reliability.           | Good First Issue  |
+| #55          | Update README with CI badge                 | Add a GitHub Actions build status badge to README.md             | Good First Issue  |
+| #56          | Create .gitignore file                      | Add .gitignore to exclude IDE and build files from the repo.     | Good First Issue  |
+
+---
+
 # Links
 ## Specification 
 - [SPECIFICATION](https://github.com/demifarquhar01/PolishPro/blob/f09bce30ff488a3d06ebd398bc550e2b811fc41c/Specification/SPECIFICATION.md)
@@ -223,3 +254,17 @@ This screenshot correctly shows a PR that:
 - Is awaiting a **code review**
 - **Skips artifact generation** unless merged to `main`
 ---
+
+# Peer Review, Onboarding, and Open-Source Collaboration
+
+## Repository Preparation 
+- [Contribution](https://github.com/demifarquhar01/PolishPro/blob/f1be13a52a9913cc3787a3d2741bd0e9e5192f76/CONTRIBUTING.md)
+- [RoadMap]()
+- [License]()
+
+## Peer Review Process 
+- [Voting Results]()
+
+- [Reflection]()
+
+
