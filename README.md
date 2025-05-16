@@ -259,8 +259,8 @@ This screenshot correctly shows a PR that:
 
 ## Repository Preparation 
 - [Contribution](https://github.com/demifarquhar01/PolishPro/blob/f1be13a52a9913cc3787a3d2741bd0e9e5192f76/CONTRIBUTING.md)
-- [RoadMap]()
-- [License]()
+- [RoadMap](https://github.com/demifarquhar01/PolishPro/blob/83ed52d593c5bcbe29c81d1ca87d908d114c4a74/RoadMap.md)
+- [License](https://github.com/demifarquhar01/PolishPro/blob/83ed52d593c5bcbe29c81d1ca87d908d114c4a74/LICENSE.md)
 
 ## Peer Review Process 
 - [Voting Results]()
