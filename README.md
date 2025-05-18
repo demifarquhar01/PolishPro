@@ -263,7 +263,7 @@ This screenshot correctly shows a PR that:
 - [License](https://github.com/demifarquhar01/PolishPro/blob/83ed52d593c5bcbe29c81d1ca87d908d114c4a74/LICENSE.md)
 
 ## Peer Review Process 
-- [Voting Results](https://github.com/demifarquhar01/PolishPro/blob/d6865a0686c4c0b10a5fe0d062c7b950dfc3c269/Voting_Results.md)
+- [Voting Results](https://github.com/demifarquhar01/PolishPro/blob/178964c72c706a51e244781d6bd0151a3edbfece/Voting_Results.md)
 
 - [Reflection](https://github.com/demifarquhar01/PolishPro/blob/d6865a0686c4c0b10a5fe0d062c7b950dfc3c269/Reflection.md)
 
